@@ -1,5 +1,5 @@
 
-![alt text](https://shopavel.com/github.png)
+![alt text](https://shopavel.com/wp-content/uploads/2021/02/Schermafbeelding-2021-02-18-om-08.56.01.png)
 
 # Shopavel
 

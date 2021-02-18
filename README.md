@@ -2,5 +2,6 @@
 ![alt text](https://shopavel.com/wp-content/uploads/2021/02/Schermafbeelding-2021-02-18-om-08.56.01.png)
 
 # Shopavel
+## Shopavel is not ready yet. Feel free to contribute
+The aim of shopavel is to become the most user-friendly webshop software without sacrificing functionality.
 
-We worked hard on a new Laravel powered webshop CMS. We plan to release the system as an open source project to the community upon completion - so stay tuned! In the meantime, although we are not quite ready to reveal to the world, you can contact us for a demo via our website.

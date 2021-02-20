@@ -13,10 +13,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5",
-        "spatie/laravel-medialibrary": "^7.19",
-        "spatie/laravel-permission": "^3.18",
-        "spatie/laravel-sitemap": "^5.8"
+        "laravel/tinker": "^2.5"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

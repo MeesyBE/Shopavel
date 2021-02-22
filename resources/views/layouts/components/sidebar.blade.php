@@ -13,7 +13,7 @@
         </div>
         <div class="shopavel-vertical-navigation-footer ng-tns-c43-214">
             <div shopavelverticalnavigationfooter="" class="ng-tns-c43-214">
-                <div class="user">
+                <a href="{{ route('users.me') }}" class="user">
                     <user>
                       <button aria-haspopup="true" mat-icon-button="" class="mat-focus-indicator mat-menu-trigger icon-button mat-icon-button mat-button-base">
                         <span class="mat-button-wrapper">
@@ -28,7 +28,7 @@
                         <div class="name text-indigo-50">{{ Auth::user()->name }}</div>
                         <div class="email text-indigo-300">{{ Auth::user()->email }}</div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>

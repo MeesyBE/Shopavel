@@ -1,8 +1,7 @@
-@extends('layouts.layout')
+@extends('layouts.shopavel', ['title' => 'Dashboard', 'subtitle' => ''])
 @section('content')
-
-      <h1 class="content-title font-size-24">Dashboard</h1>
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    You're logged in!
-        </div>
+  <div class="px-4">
+    <h3>Pageviews</h3>
+    
+  </div>
 @stop

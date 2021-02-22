@@ -38,6 +38,22 @@
                             <div class="flex items-center">
 
                             </div>
+                            <div class="flex items-right">
+                              @isset($buttontekst)
+                                @isset($buttonlink)
+                                  <a href="{{ $buttonlink }}">
+                                @endisset
+                                  <button class="flex flex-row bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded" type="button" name="button">
+                                    @isset($buttonicon) <div class="inline">
+                                      <span class="material-icons">{{ $buttonicon }}</span>
+                                    </div>
+                                       @endisset <p class="inline">{{ $buttontekst }}</p>
+                                  </button>
+                                @isset($buttonlink)
+                                  </a>
+                                @endisset
+                              @endisset
+                            </div>
                         </div>
                         <div class="flex flex-auto min-w-80  p-4">
                           <div class="flex flex-col flex-auto bg-card shadow-md rounded overflow-hidden">

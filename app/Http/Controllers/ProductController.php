@@ -8,6 +8,15 @@ use Auth;
 
 class ProductController extends Controller
 {
+  public function __construct()
+  {
+      $this->middleware(function ($request, $next) {
+          $this->user= Auth::user();
+
+          return $next($request);
+      });
+  }
+  
   public function list(){
     $products = ProductEntity::where('product_status', '!=', '-1')->get();
     return view('products.list', ['products' => $products]);

@@ -21,26 +21,35 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/pages', [PageController::class, 'list'])->name('pages.index');
-Route::get('/admin/pages/new', [PageController::class, 'new'])->name('pages.new');
-Route::post('/admin/pages/create', [PageController::class, 'create'])->name('pages.create');
-Route::get('/admin/pages/edit/{id}', [PageController::class, 'edit'])->name('pages.edit');
-Route::post('/admin/pages/save', [PageController::class, 'save'])->name('pages.save');
+
+Route::get('/admin/test', function () {
+    return view('layouts.shopavel');
+})->middleware('auth');
+
+Route::get('/admin/docs', function () {
+    return view('docs');
+})->middleware('auth');
+
+Route::get('/admin/pages', [PageController::class, 'list'])->middleware('auth')->name('pages.index');
+Route::get('/admin/pages/new', [PageController::class, 'new'])->middleware('auth')->name('pages.new');
+Route::post('/admin/pages/create', [PageController::class, 'create'])->middleware('auth')->name('pages.create');
+Route::get('/admin/pages/edit/{id}', [PageController::class, 'edit'])->middleware('auth')->name('pages.edit');
+Route::post('/admin/pages/save/{id}', [PageController::class, 'save'])->middleware('auth')->name('pages.save');
 
 
-Route::get('/admin/products', [ProductController::class, 'list'])->name('products.index');
-Route::get('/admin/products/new', [ProductController::class, 'new'])->name('products.new');
-Route::post('/admin/products/create', [ProductController::class, 'create'])->name('products.create');
-Route::get('/admin/products/edit/{id}', [ProductController::class, 'edit'])->name('products.edit');
-Route::post('/admin/products/save', [ProductController::class, 'save'])->name('products.save');
+Route::get('/admin/products', [ProductController::class, 'list'])->middleware('auth')->name('products.index');
+Route::get('/admin/products/new', [ProductController::class, 'new'])->middleware('auth')->name('products.new');
+Route::post('/admin/products/create', [ProductController::class, 'create'])->middleware('auth')->name('products.create');
+Route::get('/admin/products/edit/{id}', [ProductController::class, 'edit'])->middleware('auth')->name('products.edit');
+Route::post('/admin/products/save', [ProductController::class, 'save'])->middleware('auth')->name('products.save');
 
-Route::get('/admin/categories', [CategoryController::class, 'list'])->name('categories.index');
-Route::get('/admin/categories/new', [CategoryController::class, 'new'])->name('categories.new');
-Route::post('/admin/categories/create', [CategoryController::class, 'create'])->name('categories.create');
-Route::get('/admin/categories/edit/{id}', [CategoryController::class, 'edit'])->name('categories.edit');
-Route::post('/admin/categories/save', [CategoryController::class, 'save'])->name('categories.save');
+Route::get('/admin/categories', [CategoryController::class, 'list'])->middleware('auth')->name('categories.index');
+Route::get('/admin/categories/new', [CategoryController::class, 'new'])->middleware('auth')->name('categories.new');
+Route::post('/admin/categories/create', [CategoryController::class, 'create'])->middleware('auth')->name('categories.create');
+Route::get('/admin/categories/edit/{id}', [CategoryController::class, 'edit'])->middleware('auth')->name('categories.edit');
+Route::post('/admin/categories/save', [CategoryController::class, 'save'])->middleware('auth')->name('categories.save');
 
-Route::get('/admin/plugins', [PluginController::class, 'list'])->name('plugins.index');
+Route::get('/admin/plugins', [PluginController::class, 'list'])->middleware('auth')->name('plugins.index');
 
 
 Route::get('/admin/dashboard', function () {

@@ -1,4 +1,10 @@
-@extends('layouts.shopavel', ['title' => 'Pages', 'subtitle' => 'Edit pages'])
+@extends('layouts.shopavel', [
+  'title' => 'Pages',
+  'subtitle' => 'Edit pages',
+  'buttontekst' => 'New Page',
+  'buttonlink' => route('pages.new'),
+  'buttonicon' => 'add',
+])
 @section('content')
 {{-- <div class="flex flex-row justify-between">
     <h1 class="content-title font-size-24">Pages</h1>

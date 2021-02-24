@@ -1,4 +1,10 @@
-@extends('layouts.shopavel', ['title' => 'Products', 'subtitle' => ''])
+@extends('layouts.shopavel', [
+  'title' => 'Products',
+  'subtitle' => '',
+  'buttontekst' => 'New Product',
+  'buttonlink' => route('products.new'),
+  'buttonicon' => 'add'
+])
 @section('content')
     <div class="flex flex-row justify-between">
       <a href="{{ route('products.new') }}">

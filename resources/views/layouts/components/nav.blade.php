@@ -9,7 +9,7 @@
 
     <div class="shopavel-vertical-navigation-basic-item">
         <div class="shopavel-vertical-navigation-item-wrapper">
-            <a class="shopavel-vertical-navigation-item shopavel-vertical-navigation-item{{ Request::is('*dashboard*') ? '-active' : '' }}" href="/admin/test">
+            <a class="shopavel-vertical-navigation-item shopavel-vertical-navigation-item{{ Request::is('*dashboard*') ? '-active' : '' }}" href="/admin/dashboard">
                 <mat-icon role="img" class="mat-icon notranslate shopavel-vertical-navigation-item-icon mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="chart-pie" data-mat-icon-namespace="heroicons_outline">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
@@ -56,8 +56,21 @@
         </div>
     </div>
 
+    <div class="shopavel-vertical-navigation-basic-item">
+        <div class="shopavel-vertical-navigation-item-wrapper">
+            <a class="shopavel-vertical-navigation-item shopavel-vertical-navigation-item{{ Request::is('*plugins*') ? '-active' : '' }}" href="{{ route('plugins.index') }}">
+                <span class="material-icons shopavel-vertical-navigation-item-icon">
+                    extension
+                </span>
+                <div class="shopavel-vertical-navigation-item-title-wrapper">
+                    <div class="shopavel-vertical-navigation-item-title">Plugins</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
-    <div class="" @click="userInterface = !userInterface">
+
+    <div class="" @click="userInterface = !userInterface" @click.away="userInterface = false">
         <div class="shopavel-vertical-navigation-aside-item">
             <div class="shopavel-vertical-navigation-item-wrapper">
                 <div class="shopavel-vertical-navigation-item shopavel-vertical-navigation-item">

@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div  class="shopavel-vertical-navigation-aside-wrapper" x-show="userInterface">
+    <div  class="shopavel-vertical-navigation-aside-wrapper"  x-show="userInterface">
 
       <div class="shopavel-vertical-navigation-aside-item" style="">
           <div class="shopavel-vertical-navigation-item-wrapper">

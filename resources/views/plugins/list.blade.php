@@ -1,8 +1,5 @@
-@extends('layouts.layout')
+@extends('layouts.shopavel', ['title' => 'Plugins', 'subtitle' => 'Extend shopavel with plugins'])
 @section('content')
-
-      <h1 class="content-title font-size-24">Plugins</h1>
-
 
 
       @php

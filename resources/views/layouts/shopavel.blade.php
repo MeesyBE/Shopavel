@@ -14,11 +14,9 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/layout.css">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer ></script>
     @livewireStyles
 </head>
 
-<script type="text/javascript" src="/js/app.js"></script>
 
 
 <body class="shopavel-splash-screen-hidden shopavel-theme" x-data="{ userInterface: false, sideBar: true}">
@@ -96,6 +94,7 @@
     @include('layouts.components.footer')
     </div>
     @livewireScripts
+    <script type="text/javascript" src="/js/app.js"></script>
 </body>
 
 </html>

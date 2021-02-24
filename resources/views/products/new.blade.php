@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.shopavel', ['title' => 'Products', 'subtitle' => 'New Product'])
 @section('content')
   <div class="flex flex-row justify-between">
     <h1 class="content-title font-size-24">New Product</h1>
@@ -9,7 +9,7 @@
       <!-- Input -->
       <div class="form-group">
         <label for="full-name" class="required">Product name</label>
-        <input type="text" class="form-control" id="product_name" name="product_name" placeholder="product name" required="required">
+        <input name="product_name" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="" />
       </div>
 
       <div class="form-group">

@@ -1,19 +1,18 @@
-@extends('layouts.layout')
+@extends('layouts.shopavel', ['title' => 'Products', 'subtitle' => ''])
 @section('content')
     <div class="flex flex-row justify-between">
-      <h1 class="content-title font-size-24">Products</h1>
       <a href="{{ route('products.new') }}">
         <button class="btn"><span class="fas fa-plus"></span></button>
       </a>
     </div>
 
     <div class="flex flex-row justify-between">
-      <table class="table table-striped">
+      <table class="table w-full">
         <thead>
           <tr>
             <th>#</th>
-            <th>Name</th>
-            <th>Url_key</th>
+            <th class="text-left">Name</th>
+            <th class="text-left">Url_key</th>
             <th class="text-right">Action</th>
           </tr>
         </thead>
@@ -25,7 +24,7 @@
               <td>{{ $product->product_url_key }}</td>
               <td class="text-right">
                 <a href="{{ route('products.edit', $product->id) }}">
-                  <button type="button" name="button">
+                  <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded" type="button" name="button">
                     Edit
                   </button>
                 </a>

@@ -7,22 +7,22 @@
     </div>
 
     <div class="flex flex-row justify-between p-4">
-      <table class="table w-full">
-        <thead>
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
           <tr>
-            <th>#</th>
-            <th class="text-left">Name</th>
-            <th class="text-left">Url_key</th>
-            <th class="text-right">Action</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Url_key</th>
+            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
           </tr>
         </thead>
         <tbody>
           @foreach ($products as $product)
             <tr>
-              <th>{{ $product->id }}</th>
-              <td>{{ $product->product_name }}</td>
-              <td>{{ $product->product_url_key }}</td>
-              <td class="text-right">
+              <td class="px-6 py-2 ">{{ $product->id }}</td>
+              <td class="px-6 py-2 ">{{ $product->product_name }}</td>
+              <td class="px-6 py-2 ">{{ $product->product_url_key }}</td>
+              <td class="px-6 py-2 text-right">
                 <a href="{{ route('products.edit', $product->id) }}">
                   <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded" type="button" name="button">
                     Edit

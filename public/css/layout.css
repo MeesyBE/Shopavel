@@ -317,8 +317,8 @@ layout {
   background: #27303f
 }
 
-.shopavel-theme-light .shopavel-drawer,
-.shopavel-theme-light .shopavel-drawer .shopavel-drawer-content {
+.shopavel-theme .shopavel-drawer,
+.shopavel-theme .shopavel-drawer .shopavel-drawer-content {
   background: #fff
 }
 
@@ -686,7 +686,7 @@ classy-layout>.wrapper>.content>:not(router-outlet) {
   box-shadow: 0 1px 0 0 rgba(241, 245, 249, .12)
 }
 
-.shopavel-theme-light classy-layout>.wrapper>.header {
+.shopavel-theme classy-layout>.wrapper>.header {
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)
 }
@@ -1326,220 +1326,220 @@ classy-layout>.wrapper>.content>:not(router-outlet) {
   color: #16bdca
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-wrapper,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-wrapper {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-wrapper,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-wrapper {
   background: inherit
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item {
   color: currentColor
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
   color: #97a6ba
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #475569
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
   color: #64748b
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) {
   background-color: #e2e8f0
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
   color: #64748b
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
   color: #1a202e
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
   color: #364152
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled {
   cursor: default
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-title {
   color: #cfd8e3
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) {
   background-color: #f4f5f7
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
   color: #64748b
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
   color: #1a202e
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
   color: #364152
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
   color: #64748b
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #1a202e
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
   color: #364152
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
   color: #97a6ba
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #5850ec
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
   color: #64748b
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #cfd8e3
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
   color: #97a6ba
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) {
   background-color: rgba(0, 0, 0, .3)
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
   color: #f1f5f9
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
   color: #fbfdfe
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
   color: #cfd8e3
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled {
   cursor: default
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-title {
   color: #475569
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) {
   background-color: hsla(0, 0%, 100%, .12)
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
   color: #f1f5f9
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
   color: #fbfdfe
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
   color: #cfd8e3
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
   color: #f1f5f9
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #fbfdfe
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
   color: #cfd8e3
 }
 
-.shopavel-theme-light .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .shopavel-vertical-navigation.theme-dark .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #8da2fb
 }
 
@@ -2707,131 +2707,131 @@ classy-layout>.wrapper>.content>:not(router-outlet) {
   color: #97a6ba
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a {
+.shopavel-theme .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a {
   color: #b4c6fc
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a .mat-icon {
+.shopavel-theme .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a .mat-icon {
   color: #8da2fb
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a:hover {
+.shopavel-theme .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a:hover {
   background-color: #5145cd;
   color: #f0f5ff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a:hover .mat-icon {
+.shopavel-theme .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .navigation-footer-menu a:hover .mat-icon {
   color: #e5edff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .user .avatar .status {
+.shopavel-theme .layout>.shopavel-vertical-navigation .shopavel-vertical-navigation-footer .user .avatar .status {
   border-color: #42389d
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
   color: #8da2fb
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #b4c6fc
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
   color: #8da2fb
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) {
   background-color: #362f78
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
   color: #e5edff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
   color: #f0f5ff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active-forced:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-active:not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
   color: #b4c6fc
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-title {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-item.shopavel-vertical-navigation-item-disabled .shopavel-vertical-navigation-item-title {
   color: #5850ec
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled),
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) {
   background-color: #5145cd
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-icon {
   color: #e5edff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-title {
   color: #f0f5ff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-aside-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-basic-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item:hover:not(.shopavel-vertical-navigation-item-active-forced):not(.shopavel-vertical-navigation-item-disabled) .shopavel-vertical-navigation-item-subtitle {
   color: #b4c6fc
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
   color: #e5edff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-arrow,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-arrow,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #f0f5ff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle,
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-collapsable-item.shopavel-vertical-navigation-item-expanded>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle,
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-icon {
   color: #b4c6fc
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-title {
   color: #f0f5ff
 }
 
-.shopavel-theme-light .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
+.shopavel-theme .layout>.shopavel-vertical-navigation.shopavel-vertical-navigation-layout .shopavel-vertical-navigation-group-item>.shopavel-vertical-navigation-item-wrapper .shopavel-vertical-navigation-item .shopavel-vertical-navigation-item-subtitle {
   color: #6875f5
 }
 
-.shopavel-theme-light .layout>.wrapper>.footer,
-.shopavel-theme-light .layout>.wrapper>.header {
+.shopavel-theme .layout>.wrapper>.footer,
+.shopavel-theme .layout>.wrapper>.header {
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)
 }
 
-.shopavel-theme-light .layout>.wrapper>.footer {
+.shopavel-theme .layout>.wrapper>.footer {
   box-shadow: 0 -1px 0 0 #e2e8f0;
   color: #64748b
 }
@@ -3774,39 +3774,39 @@ notifications {
   background: #64748b
 }
 
-.shopavel-theme-light .notifications-panel .header {
+.shopavel-theme .notifications-panel .header {
   border-top-color: #5850ec;
   background: #f1f5f9
 }
 
-.shopavel-theme-light .notifications-panel .header .mark-all-as-read {
+.shopavel-theme .notifications-panel .header .mark-all-as-read {
   color: #97a6ba
 }
 
-.shopavel-theme-light .notifications-panel .content {
+.shopavel-theme .notifications-panel .content {
   background: #fff
 }
 
 @media (min-width:600px) {
-  .shopavel-theme-light .notifications-panel .content .notification:hover {
+  .shopavel-theme .notifications-panel .content .notification:hover {
     background: #f1f5f9 !important
   }
 }
 
-.shopavel-theme-light .notifications-panel .content .notification .icon {
+.shopavel-theme .notifications-panel .content .notification .icon {
   color: #5850ec;
   background: #e5edff
 }
 
-.shopavel-theme-light .notifications-panel .content .notification .notification-content .time {
+.shopavel-theme .notifications-panel .content .notification .notification-content .time {
   color: #64748b
 }
 
-.shopavel-theme-light .notifications-panel .content .notification .actions .indicator .unread {
+.shopavel-theme .notifications-panel .content .notification .actions .indicator .unread {
   background: #e02424
 }
 
-.shopavel-theme-light .notifications-panel .content .notification .actions .indicator .read {
+.shopavel-theme .notifications-panel .content .notification .actions .indicator .read {
   background: #97a6ba
 }
 
@@ -3983,35 +3983,35 @@ user .avatar .status {
   background: #97a6ba
 }
 
-.shopavel-theme-light user .avatar .status.online {
+.shopavel-theme user .avatar .status.online {
   background: #0e9f6e
 }
 
-.shopavel-theme-light user .avatar .status.away {
+.shopavel-theme user .avatar .status.away {
   background: #ff5a1f
 }
 
-.shopavel-theme-light user .avatar .status.busy {
+.shopavel-theme user .avatar .status.busy {
   background: #f05252
 }
 
-.shopavel-theme-light user .avatar .status.not-visible {
+.shopavel-theme user .avatar .status.not-visible {
   background: #97a6ba
 }
 
-.shopavel-theme-light .user-status-menu .status.online {
+.shopavel-theme .user-status-menu .status.online {
   background: #0e9f6e
 }
 
-.shopavel-theme-light .user-status-menu .status.away {
+.shopavel-theme .user-status-menu .status.away {
   background: #ff5a1f
 }
 
-.shopavel-theme-light .user-status-menu .status.busy {
+.shopavel-theme .user-status-menu .status.busy {
   background: #f05252
 }
 
-.shopavel-theme-light .user-status-menu .status.not-visible {
+.shopavel-theme .user-status-menu .status.not-visible {
   background: #97a6ba
 }
 
@@ -4713,67 +4713,67 @@ search.search-appearance-basic .search-container .search-input {
   color: #0694a2
 }
 
-.shopavel-theme-light search.search-appearance-basic {
+.shopavel-theme search.search-appearance-basic {
   background: transparent
 }
 
-.shopavel-theme-light search.search-appearance-bar .search-container {
+.shopavel-theme search.search-appearance-bar .search-container {
   background: #fff
 }
 
-.shopavel-theme-light search.search-appearance-bar .search-container .search-input .mat-form-field-wrapper .mat-form-field-flex {
+.shopavel-theme search.search-appearance-bar .search-container .search-input .mat-form-field-wrapper .mat-form-field-flex {
   background: transparent
 }
 
-.shopavel-theme-light .search-results:before {
+.shopavel-theme .search-results:before {
   border-color: transparent transparent #e2e8f0
 }
 
-.shopavel-theme-light .search-results:after {
+.shopavel-theme .search-results:after {
   border-color: transparent transparent #fff
 }
 
 @media (min-width:0) and (max-width:599px) {
-  .shopavel-theme-light .search-results .mat-option {
+  .shopavel-theme .search-results .mat-option {
     background: transparent !important
   }
 }
 
 @media (min-width:600px) {
 
-  .shopavel-theme-light .search-results .mat-option:focus:not(.mat-option-disabled),
-  .shopavel-theme-light .search-results .mat-option:hover:not(.mat-option-disabled) {
+  .shopavel-theme .search-results .mat-option:focus:not(.mat-option-disabled),
+  .shopavel-theme .search-results .mat-option:hover:not(.mat-option-disabled) {
     box-shadow: inset 4px 0 0 #5850ec
   }
 }
 
-.shopavel-theme-light .search-results .mat-option.no-results .mat-option-text {
+.shopavel-theme .search-results .mat-option.no-results .mat-option-text {
   color: #64748b
 }
 
-.shopavel-theme-light .search-results .mat-option .mat-option-text .result.contact-result .badge {
+.shopavel-theme .search-results .mat-option .mat-option-text .result.contact-result .badge {
   background: #3f83f8;
   color: #ebf5ff
 }
 
-.shopavel-theme-light .search-results .mat-option .mat-option-text .result.page-result .badge {
+.shopavel-theme .search-results .mat-option .mat-option-text .result.page-result .badge {
   background: #9061f9;
   color: #f6f5ff
 }
 
-.shopavel-theme-light .search-results .mat-option .mat-option-text .result.page-result .title .link {
+.shopavel-theme .search-results .mat-option .mat-option-text .result.page-result .title .link {
   color: #64748b
 }
 
-.shopavel-theme-light .search-results .mat-option .mat-option-text .result .image {
+.shopavel-theme .search-results .mat-option .mat-option-text .result .image {
   background: #e5edff
 }
 
-.shopavel-theme-light .search-results .mat-option .mat-option-text .result .image .mat-icon {
+.shopavel-theme .search-results .mat-option .mat-option-text .result .image .mat-icon {
   color: #5850ec
 }
 
-.shopavel-theme-light .search-results .mat-option .mat-option-text .result .title mark {
+.shopavel-theme .search-results .mat-option .mat-option-text .result .title mark {
   background: transparent;
   color: #5850ec
 }
@@ -5184,41 +5184,41 @@ shortcuts {
   color: #97a6ba
 }
 
-.shopavel-theme-light .shortcuts-panel .header {
+.shopavel-theme .shortcuts-panel .header {
   border-top-color: #5850ec;
   background: #f1f5f9
 }
 
-.shopavel-theme-light .shortcuts-panel .content {
+.shopavel-theme .shortcuts-panel .content {
   background: #fff
 }
 
 @media (min-width:600px) {
-  .shopavel-theme-light .shortcuts-panel .content:not(.mode-modify) .shortcut:hover {
+  .shopavel-theme .shortcuts-panel .content:not(.mode-modify) .shortcut:hover {
     background: #f1f5f9
   }
 }
 
-.shopavel-theme-light .shortcuts-panel .content .shortcut,
-.shopavel-theme-light .shortcuts-panel .content .shortcut .edit-shortcut {
+.shopavel-theme .shortcuts-panel .content .shortcut,
+.shopavel-theme .shortcuts-panel .content .shortcut .edit-shortcut {
   background: transparent
 }
 
-.shopavel-theme-light .shortcuts-panel .content .shortcut a {
+.shopavel-theme .shortcuts-panel .content .shortcut a {
   color: #27303f
 }
 
-.shopavel-theme-light .shortcuts-panel .content .shortcut a .icon .edit-icon {
+.shopavel-theme .shortcuts-panel .content .shortcut a .icon .edit-icon {
   background: #27303f;
   color: #f9fafb
 }
 
-.shopavel-theme-light .shortcuts-panel .content .shortcut a .icon .link-icon {
+.shopavel-theme .shortcuts-panel .content .shortcut a .icon .link-icon {
   color: #5850ec;
   background: #e5edff
 }
 
-.shopavel-theme-light .shortcuts-panel .content .shortcut a .description {
+.shopavel-theme .shortcuts-panel .content .shortcut a .description {
   color: #64748b
 }
 
@@ -5574,39 +5574,39 @@ messages {
   background: #64748b
 }
 
-.shopavel-theme-light .messages-panel .header {
+.shopavel-theme .messages-panel .header {
   border-top-color: #5850ec;
   background: #f1f5f9
 }
 
-.shopavel-theme-light .messages-panel .header .mark-all-as-read {
+.shopavel-theme .messages-panel .header .mark-all-as-read {
   color: #97a6ba
 }
 
-.shopavel-theme-light .messages-panel .content {
+.shopavel-theme .messages-panel .content {
   background: #fff
 }
 
 @media (min-width:600px) {
-  .shopavel-theme-light .messages-panel .content .message:hover {
+  .shopavel-theme .messages-panel .content .message:hover {
     background: #f1f5f9 !important
   }
 }
 
-.shopavel-theme-light .messages-panel .content .message .icon {
+.shopavel-theme .messages-panel .content .message .icon {
   color: #5850ec;
   background: #e5edff
 }
 
-.shopavel-theme-light .messages-panel .content .message .message-content .time {
+.shopavel-theme .messages-panel .content .message .message-content .time {
   color: #64748b
 }
 
-.shopavel-theme-light .messages-panel .content .message .actions .indicator .unread {
+.shopavel-theme .messages-panel .content .message .actions .indicator .unread {
   background: #1c64f2
 }
 
-.shopavel-theme-light .messages-panel .content .message .actions .indicator .read {
+.shopavel-theme .messages-panel .content .message .actions .indicator .read {
   background: #97a6ba
 }
 
@@ -7037,54 +7037,54 @@ tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks
   color: #97a6ba
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container {
+.shopavel-theme tasks-list .mat-drawer-container {
   background: #fff
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .header .remaining-tasks-count {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .header .remaining-tasks-count {
   color: #64748b
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list.cdk-drop-list-dragging .task:hover.type-task .task-content {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list.cdk-drop-list-dragging .task:hover.type-task .task-content {
   background: none
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task.completed a .title {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task.completed a .title {
   color: #97a6ba
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task.type-section {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task.type-section {
   background: #f1f5f9
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task.selected .task-content {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task.selected .task-content {
   box-shadow: inset -4px 0 0 0 #5850ec
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content .drag-handle .mat-icon,
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .title .placeholder {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content .drag-handle .mat-icon,
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .title .placeholder {
   color: #97a6ba
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .priority .low {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .priority .low {
   color: #057a55
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .priority .high {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .priority .high {
   color: #e02424
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .due-date {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .task .task-content a .due-date {
   color: #64748b
 }
 
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks {
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks {
   background: #f1f5f9
 }
 
-.shopavel-theme-light .tasks-list-search-results-panel .mat-option .result .result-notes,
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks .mat-icon,
-.shopavel-theme-light tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks h4 {
+.shopavel-theme .tasks-list-search-results-panel .mat-option .result .result-notes,
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks .mat-icon,
+.shopavel-theme tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks h4 {
   color: #64748b
 }
 
@@ -7207,7 +7207,7 @@ tasks-list .mat-drawer-container .mat-drawer-content .main .tasks-list .no-tasks
 }
 
 .theme-light inventory,
-.shopavel-theme-light inventory {
+.shopavel-theme inventory {
   background: #fff
 }
 
@@ -7746,42 +7746,42 @@ inventory-list .main .products-list .no-products {
   background: rgba(0, 0, 0, .05)
 }
 
-.shopavel-theme-light inventory-list .main .products-list table {
+.shopavel-theme inventory-list .main .products-list table {
   background: transparent
 }
 
-.shopavel-theme-light inventory-list .main .products-list table thead th {
+.shopavel-theme inventory-list .main .products-list table thead th {
   box-shadow: 0 1px 0 0 #e2e8f0;
   background: #fbfdfe
 }
 
-.shopavel-theme-light inventory-list .main .products-list table tbody tr.product-row:hover {
+.shopavel-theme inventory-list .main .products-list table tbody tr.product-row:hover {
   background: #f0f5ff
 }
 
-.shopavel-theme-light inventory-list .main .products-list table tbody tr.product-row td.mat-column-sku .thumbnail {
+.shopavel-theme inventory-list .main .products-list table tbody tr.product-row td.mat-column-sku .thumbnail {
   background: #fff
 }
 
-.shopavel-theme-light inventory-list .main .products-list table tbody tr.product-row td.mat-column-sku .thumbnail>span {
+.shopavel-theme inventory-list .main .products-list table tbody tr.product-row td.mat-column-sku .thumbnail>span {
   color: #64748b
 }
 
-.shopavel-theme-light inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags {
+.shopavel-theme inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags {
   background-color: #fff;
   border-color: #cfd8e3
 }
 
-.shopavel-theme-light inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags .available-tags {
+.shopavel-theme inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags .available-tags {
   box-shadow: 0 -1px 0 0 #e2e8f0
 }
 
-.shopavel-theme-light inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags .available-tags .mat-checkbox:hover,
-.shopavel-theme-light inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags .create-tag {
+.shopavel-theme inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags .available-tags .mat-checkbox:hover,
+.shopavel-theme inventory-list .main .products-list table tbody tr.product-details-row td.mat-column-productDetails .product-details-container .product-details .tags .create-tag {
   background: rgba(151, 166, 186, .12)
 }
 
-.shopavel-theme-light inventory-list .main .products-list .mat-paginator {
+.shopavel-theme inventory-list .main .products-list .mat-paginator {
   background: #fbfdfe
 }
 

@@ -14,15 +14,14 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/layout.css">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
-    defer
-></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer ></script>
+    @livewireStyles
 </head>
 
 <script type="text/javascript" src="/js/app.js"></script>
 
 
-<body class="shopavel-splash-screen-hidden shopavel-theme-light" x-data="{ userInterface: false, sideBar: true}">
+<body class="shopavel-splash-screen-hidden shopavel-theme" x-data="{ userInterface: false, sideBar: true}">
     <div class="layout">
         @include('layouts.components.sidebar')
         <div class="wrapper">
@@ -94,10 +93,9 @@
             </div>
             @endisset
 
-        </div>
-    </div>
     @include('layouts.components.footer')
     </div>
+    @livewireScripts
 </body>
 
 </html>

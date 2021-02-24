@@ -6,8 +6,9 @@
           </div>
         </div>
         <div shopavelscrollbar="" class="shopavel-vertical-navigation-content">
-            @include('layouts.components.nav')
+            @include('layouts.components.nav.level-one')
         </div>
+
         <div class="shopavel-vertical-navigation-footer">
                 <a href="{{ route('users.profile') }}" class="user">
                     <user>
@@ -25,54 +26,7 @@
                 </a>
         </div>
     </div>
-
-    <div  class="shopavel-vertical-navigation-aside-wrapper"  x-show="userInterface">
-
-      <div class="shopavel-vertical-navigation-aside-item" style="">
-          <div class="shopavel-vertical-navigation-item-wrapper">
-              <div class="shopavel-vertical-navigation-item">
-                  <span class="material-icons">
-                    settings
-                  </span>
-                  <div class="shopavel-vertical-navigation-item-title-wrapper">
-                      <div class="shopavel-vertical-navigation-item-title">Settings</div>
-                  </div>
-              </div>
-          </div>
+    @include('layouts.components.nav.settings')
 
 
-          <div class="shopavel-vertical-navigation-item-children">
-              <div class="shopavel-vertical-navigation-basic-item">
-                  <div class="shopavel-vertical-navigation-item-wrapper">
-                      <a class="shopavel-vertical-navigation-item" href="{{ route('users.index') }}">
-                        <span class="material-icons shopavel-vertical-navigation-item-icon">
-                          people
-                        </span>
-                        <div class="shopavel-vertical-navigation-item-title-wrapper">
-                            <div class="shopavel-vertical-navigation-item-title">Users</div>
-                        </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-
-
-          <div class="shopavel-vertical-navigation-item-children">
-              <div class="shopavel-vertical-navigation-basic-item">
-                  <div class="shopavel-vertical-navigation-item-wrapper">
-                      <a class="shopavel-vertical-navigation-item" href="{{ route('settings.index') }}">
-                        <span class="material-icons shopavel-vertical-navigation-item-icon">
-                          miscellaneous_services
-                        </span>
-                        <div class="shopavel-vertical-navigation-item-title-wrapper">
-                            <div class="shopavel-vertical-navigation-item-title">Site setting</div>
-                        </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-
-
-      </div>
-    </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="footer" >
+<div class="footer bg-white shadow-sm mt-4" >
 <div class="flex flex-row justify-between w-full">
   <div class="">
     Shopavel © 2021

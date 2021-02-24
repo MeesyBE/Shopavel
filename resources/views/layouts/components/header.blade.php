@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header bg-white shadow-md">
     <button mat-icon-button="" class="bg-white hover:bg-gray-100  text-gray-700 font-bold py-2 px-4 rounded-full w-10 h-10 pl-2" x-on:click="sideBar = !sideBar">
         <span class="material-icons">
           menu

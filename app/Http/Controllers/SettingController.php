@@ -38,6 +38,6 @@ class SettingController extends Controller
       }
 
     }
-    back();
+    return redirect()->back();
   }
 }

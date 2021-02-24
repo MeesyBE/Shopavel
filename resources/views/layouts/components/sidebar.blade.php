@@ -1,26 +1,20 @@
-<div class="shopavel-vertical-navigation bg-indigo-800 theme-dark ng-tns-c43-214 shopavel-vertical-navigation-mode-side shopavel-vertical-navigation-position-left shopavel-vertical-navigation-appearance-futuristic shopavel-vertical-navigation-opened shopavel-vertical-navigation-animations-enabled"
-  style="visibility: visible;" x-show="sideBar">
+<div class="shopavel-vertical-navigation bg-indigo-800 theme-dark shopavel-vertical-navigation-layout" x-show="sideBar">
     <div class="shopavel-vertical-navigation-wrapper" >
-        <div class="shopavel-vertical-navigation-header ng-tns-c43-214">
-            <div shopavelverticalnavigationheader="" class="ng-tns-c43-214">
-                <div class="logo">
-                  <img src="/admin/img/logo-white.png" style="width: 100%;">
-                </div>
-            </div>
+        <div class="shopavel-vertical-navigation-header ">
+          <div class="logo">
+            <img src="/admin/img/logo-white.png" style="width: 100%;">
+          </div>
         </div>
-        <div shopavelscrollbar="" class="shopavel-vertical-navigation-content ng-tns-c43-214 ps ps--active-y">
+        <div shopavelscrollbar="" class="shopavel-vertical-navigation-content">
             @include('layouts.components.nav')
         </div>
-        <div class="shopavel-vertical-navigation-footer ng-tns-c43-214">
-            <div shopavelverticalnavigationfooter="" class="ng-tns-c43-214">
+        <div class="shopavel-vertical-navigation-footer">
                 <a href="{{ route('users.profile') }}" class="user">
                     <user>
-                      <button aria-haspopup="true" mat-icon-button="" class="mat-focus-indicator mat-menu-trigger icon-button mat-icon-button mat-button-base">
-                        <span class="mat-button-wrapper">
-                          <span class="avatar">
-                            <img src="" class="ng-star-inserted" />
-                            <span class="status online"></span>
-                          </span>
+                      <button aria-haspopup="true" class="icon-button">
+                        <span class="avatar">
+                          <img src="" class="" />
+                          <span class="status online"></span>
                         </span>
                       </button>
                     </user>
@@ -29,7 +23,6 @@
                         <div class="email text-indigo-300">{{ Auth::user()->email }}</div>
                     </div>
                 </a>
-            </div>
         </div>
     </div>
 
@@ -83,13 +76,3 @@
       </div>
     </div>
 </div>
-<script>
-    function sidaBar() {
-        return {
-            show: true,
-            open() { this.show = true },
-            close() { this.show = false },
-            isOpen() { return this.show === true },
-        }
-    }
-</script>

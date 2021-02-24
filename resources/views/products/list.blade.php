@@ -1,6 +1,6 @@
 @extends('layouts.shopavel', [
   'title' => 'Products',
-  'subtitle' => '',
+  'subtitle' => 'Manage products',
   'buttontekst' => 'New Product',
   'buttonlink' => route('products.new'),
   'buttonicon' => 'add'

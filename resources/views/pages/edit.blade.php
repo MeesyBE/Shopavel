@@ -19,7 +19,6 @@
             <div class="">
 
               <div class="form-group mt-10">
-                <textarea class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" name="content" rows="8" cols="80"></textarea>
               </div>
             </div>
         </div>

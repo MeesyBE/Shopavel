@@ -7,6 +7,7 @@ use App\Http\Controllers\PluginController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,9 @@ use App\Http\Controllers\SettingController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 Route::get('/admin/test', function () {
@@ -70,3 +71,7 @@ require __DIR__.'/auth.php';
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
+Route::get('/{urlkey}', [FrontendController::class, 'index'])->name('frontend.index');

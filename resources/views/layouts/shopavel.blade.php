@@ -64,29 +64,12 @@
                             @yield('content')
                           </div>
                         </div>
-                        {{--  <div class="flex flex-auto min-w-80 h-100 p-4">
-                            <div class="flex flex-col flex-auto bg-card shadow-md rounded overflow-hidden">
-                                <div class="flex flex-col p-4 pl-6">
-                                    <div class="flex items-center justify-between">
-                                        <div class="font-bold text-md text-secondary uppercase tracking-wider">Orders</div>
-                                        <div>
-                                            <button aria-haspopup="true" mat-button="" class="mat-focus-indicator mat-menu-trigger h-8 min-h-8 px-2 mat-button mat-button-base">
-                                                <span class="mat-button-wrapper">
-                                                    <span lass="font-medium text-sm text-hint">30 days</span>
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="mt-6 font-semibold text-2xl leading-tight"><span class="text-teal-600">Desktop</span> is the most popular device </div>
-                                </div>
-
-                            </div>
-                        </div> --}}
 
                     </div>
                 </div>
             </div>
-            <div class="footer" > Shopavel © 2021 </div>
+            @include('layouts.components.footer')
+
         </div>
     </div>
     <script src="/js/runtime-es2015.8e3c2b0fe8f90be6aecb.js" type="module"></script>

@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PluginController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +54,10 @@ Route::post('/admin/categories/save', [CategoryController::class, 'save'])->midd
 Route::get('/admin/plugins', [PluginController::class, 'list'])->middleware('auth')->name('plugins.index');
 
 Route::get('/admin/users', [UserController::class, 'list'])->middleware('auth')->name('users.index');
-Route::get('/admin/users/me', [UserController::class, 'me'])->middleware('auth')->name('users.me');
+Route::get('/admin/users/profile', [UserController::class, 'profile'])->middleware('auth')->name('users.profile');
+
+Route::get('/admin/settings', [SettingController::class, 'index'])->middleware('auth')->name('settings.index');
+
 
 
 Route::get('/admin/dashboard', function () {

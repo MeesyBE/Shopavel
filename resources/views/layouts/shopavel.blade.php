@@ -91,6 +91,7 @@
             </div>
             @endisset
 
+
     @include('layouts.components.footer')
     </div>
     @livewireScripts

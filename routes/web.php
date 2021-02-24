@@ -57,6 +57,7 @@ Route::get('/admin/users', [UserController::class, 'list'])->middleware('auth')-
 Route::get('/admin/users/profile', [UserController::class, 'profile'])->middleware('auth')->name('users.profile');
 
 Route::get('/admin/settings', [SettingController::class, 'index'])->middleware('auth')->name('settings.index');
+Route::post('/admin/settings/save', [SettingController::class, 'save'])->middleware('auth')->name('settings.save');
 
 
 

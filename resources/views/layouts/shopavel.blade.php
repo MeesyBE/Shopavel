@@ -14,20 +14,24 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/layout.css">
-
+    <script
+  src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
+  defer
+></script>
 </head>
 
-<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
 
 
-<body class="shopavel-splash-screen-hidden shopavel-theme-light">
-    <div class="layout">
+<body class="shopavel-splash-screen-hidden shopavel-theme-light" x-data="{ userInterface: false, sideBar: true}">
+    <div class="layout" >
         @include('layouts.components.sidebar')
+
 
         <div class="wrapper">
             @include('layouts.components.header')
 
-            <div class="content">
+            <div class="content justify-between">
                 <div class="flex flex-col flex-auto w-full p-8 xs:p-2">
                     <div class="flex flex-wrap w-full">
                        <div class="flex items-center justify-between w-full my-4 px-4 xs:pr-0">
@@ -82,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer"> Shopavel © 2021 </div>
+            <div class="footer" > Shopavel © 2021 </div>
         </div>
     </div>
     <script src="/js/runtime-es2015.8e3c2b0fe8f90be6aecb.js" type="module"></script>

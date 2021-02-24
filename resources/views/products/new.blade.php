@@ -3,7 +3,7 @@
   <div class="flex flex-row justify-between">
     <h1 class="content-title font-size-24">New Product</h1>
   </div>
-  <div class="flex flex-row justify-between">
+  <div class="flex flex-row justify-between p-4">
     <form action="{{ route('products.create') }}" method="POST" class="w-400 mw-full"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
       {{ csrf_field() }}
       <!-- Input -->

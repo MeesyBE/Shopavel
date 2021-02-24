@@ -1,5 +1,5 @@
 <div class="header">
-    <button mat-icon-button="" class="mat-focus-indicator navigation-toggle-button mat-icon-button mat-button-base">
+    <button mat-icon-button="" class="mat-focus-indicator navigation-toggle-button mat-icon-button mat-button-base" x-on:click="sideBar = !sideBar">
         <span class="mat-button-wrapper">
             <mat-icon role="img" class="mat-icon notranslate mat-icon-no-color" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="menu">
                 <svg viewBox="0 0 24 24" x="576" y="1392" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">

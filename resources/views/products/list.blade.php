@@ -6,7 +6,7 @@
       </a>
     </div>
 
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-between p-4">
       <table class="table w-full">
         <thead>
           <tr>

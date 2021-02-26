@@ -15,19 +15,17 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/layout.css">
     @livewireStyles
-</head>
 
+    @livewireScripts
+    <script src="{{ asset('/js/app.js') }}" ></script>
+
+</head>
 
 
 <body class="shopavel-splash-screen-hidden shopavel-theme h-full" x-data="{ userInterface: false, sideBar: true}">
 
-                                @yield('content')
+  @yield('content')
 
-
-
-    </div>
-    @livewireScripts
-    <script src="{{ asset('/js/app.js') }}" ></script>
     {{-- <script type="text/javascript" src="/js/app.js"></script> --}}
 </body>
 

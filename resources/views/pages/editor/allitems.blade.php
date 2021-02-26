@@ -38,19 +38,19 @@
                         <div class="flex flex-row mt-2">
 
 
-                            <button class="w-20 h-20 border rounded p-4" wire:click="addDiv" @click="addItem = false">
+                            <button class="w-20 h-20 border rounded p-4" wire:click="addItemToPage('addDiv', )" @click="addItem = false">
                                 <span>
                                   Div
                                 </span>
                             </button>
 
-                            <button class="w-20 h-20 border rounded p-4 ml-4" wire:click="addText" @click="addItem = false">
+                            <button class="w-20 h-20 border rounded p-4 ml-4" wire:click="addItemToPage('addText')" @click="addItem = false">
                                 <span>
                                   Text
                                 </span>
                             </button>
 
-                            <button class="w-20 h-20 border rounded p-4 ml-4" wire:click="addButton" @click="addItem = false">
+                            <button class="w-20 h-20 border rounded p-4 ml-4" wire:click="addItemToPage('addButton')" @click="addItem = false">
                                 <span>
                                   Button
                                 </span>

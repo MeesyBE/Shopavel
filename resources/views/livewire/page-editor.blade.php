@@ -66,13 +66,11 @@
 
 
 
+                  {!! $pageContentHtml !!}
 
 
 
-                                <script type="text/javascript">
-                                </script>
 
-                                <script src="{{ asset('/js/editor.js') }}" ></script>
 
                 </div>
                 <div class=" min-w-full">
@@ -87,3 +85,4 @@
     </div>
 
 </div>
+<script src="{{ asset('/js/editor.js') }}" ></script>

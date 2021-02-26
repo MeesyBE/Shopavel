@@ -10,7 +10,7 @@ class PageEditor extends Component
 {
     public $pageContentArray = ['items' => []];
     public $pageContentJson = '';
-    public $sidebarIems = ['1', '2', '3'];
+    public $pageContentHtml = '';
     public $itemCount = 0;
     public $page;
 
@@ -26,6 +26,7 @@ class PageEditor extends Component
        $defaultArray = ['item' => ['index' => $this->itemCount, 'type' => 'div', 'name' => 'Div', 'classes' => '', 'children' => []]];
        $this->pageContentArray['items'][] = $defaultArray;
        $this->pageContentArrayToJson();
+       $this->renderView();
        $this->itemCount++;
     }
 
@@ -34,6 +35,7 @@ class PageEditor extends Component
        $defaultArray = ['item' => ['index' => $this->itemCount, 'type' => 'text', 'name' => 'Text', 'classes' => '', 'children' => []]];
        $this->pageContentArray['items'][] = $defaultArray;
        $this->pageContentArrayToJson();
+       $this->renderView();
        $this->itemCount++;
     }
 
@@ -43,6 +45,7 @@ class PageEditor extends Component
        $defaultArray = ['item' => ['index' => $this->itemCount, 'type' => 'button', 'name' => 'Button', 'classes' => '', 'children' => []]];
        $this->pageContentArray['items'][] = $defaultArray;
        $this->pageContentArrayToJson();
+       $this->renderView();
        $this->itemCount++;
     }
 
@@ -65,7 +68,37 @@ class PageEditor extends Component
       } else {
       }
       $this->pageContentArrayToJson();
+      $this->renderView();
       // dd($this->pageContentJson);
+    }
+
+
+    public function renderView(){
+
+      $this->pageContentHtml = '';
+      foreach ($this->pageContentArray['items'] as $key => $item) {
+        switch ($item['item']['type']) {
+          case 'div':
+            $this->pageContentHtml .= '<div></div>';
+
+            break;
+          case 'text':
+            $this->pageContentHtml .= '<h1></h1>';
+
+            break;
+          case 'button':
+            $this->pageContentHtml .= '<button></button>';
+
+            break;
+
+          default:
+            $this->pageContentHtml .= '<div></div>';
+
+            break;
+        }
+
+      }
+
     }
 
 

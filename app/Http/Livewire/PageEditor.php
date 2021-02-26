@@ -11,6 +11,7 @@ class PageEditor extends Component
     public $pageContentArray = ['items' => []];
     public $pageContentJson = '';
     public $pageContentHtml = '';
+    public $dropdownStates = [];
     public $itemCount = 0;
     public $page;
 
@@ -25,6 +26,7 @@ class PageEditor extends Component
     {
        $defaultArray = ['item' => ['index' => $this->itemCount, 'type' => 'div', 'name' => 'Div', 'classes' => '', 'children' => []]];
        $this->pageContentArray['items'][] = $defaultArray;
+       $this->dropdownStates['div'.$this->itemCount] = false;
        $this->pageContentArrayToJson();
        $this->renderView();
        $this->itemCount++;
@@ -34,6 +36,7 @@ class PageEditor extends Component
     {
        $defaultArray = ['item' => ['index' => $this->itemCount, 'type' => 'text', 'name' => 'Text', 'classes' => '', 'children' => []]];
        $this->pageContentArray['items'][] = $defaultArray;
+       $this->dropdownStates['text'.$this->itemCount] = false;
        $this->pageContentArrayToJson();
        $this->renderView();
        $this->itemCount++;
@@ -44,6 +47,7 @@ class PageEditor extends Component
     {
        $defaultArray = ['item' => ['index' => $this->itemCount, 'type' => 'button', 'name' => 'Button', 'classes' => '', 'children' => []]];
        $this->pageContentArray['items'][] = $defaultArray;
+       $this->dropdownStates['button'.$this->itemCount] = false;
        $this->pageContentArrayToJson();
        $this->renderView();
        $this->itemCount++;

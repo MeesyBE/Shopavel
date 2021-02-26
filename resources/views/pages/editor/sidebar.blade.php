@@ -10,7 +10,7 @@
         </button>
     </div>
     <div class="w-full page-sidebar-items h-full bg-gray-800 text-white p-4 h-200" >
-      @include('pages.editor.sidebarItem', ['items' => $pageContentArray['items']])
+      @include('pages.editor.sidebarItem', ['items' => $pageContentArray['items'], 'level' => 0])
     </div>
 
 

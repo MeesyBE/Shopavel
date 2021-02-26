@@ -31,7 +31,7 @@
     @endforeach
   </div>
 @endif
-<div class="flex bg-indigo-800 rounded px-4 py-2 mt-4 w-full" x-on:click="addItem = !addItem">
+<div class="flex bg-indigo-800 rounded px-4 py-2 mt-4 w-full" wire:click="addItem">
     <span class="material-icons align-middle"> add </span>
     <span class="page-obj-title align-middle"> Add item </span>
 </div>

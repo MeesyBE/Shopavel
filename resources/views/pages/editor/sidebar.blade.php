@@ -1,4 +1,4 @@
-<div x-data="{ pageSettings: false, addItem: false }" class="flex flex-col justify-between w-1/5 bg-white">
+<div x-data="{ pageSettings: false, addItem: @entangle('addItem') }" class="flex flex-col justify-between w-1/5 bg-white">
     <div class="w-full page-sidebar-header bg-gray-200 p-4">
         <a href="{{ route('pages.index') }}">
             <button class="bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">

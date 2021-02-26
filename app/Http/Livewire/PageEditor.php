@@ -13,6 +13,7 @@ class PageEditor extends Component
     public $pageContentHtml = '';
     public $dropdownStates = [];
     public $itemCount = 0;
+    public $addItem = false;
     public $page;
 
     public function mount()
@@ -103,6 +104,10 @@ class PageEditor extends Component
 
       }
 
+    }
+
+    public function addItem(){
+        $this->addItem = true;
     }
 
 

@@ -19,9 +19,7 @@
                 {{-- x-show="dropdownStates.{{ $item['item']['type'].$item['item']['index'] }}" --}}
                 <div x-show="dropdownStates.{{ $item['item']['type'].$item['item']['index'] }}" class="w-full bg-indigo-900" >
                     <div class="ml-4">
-                        item
                         @include('pages.editor.sidebarItem', ['items' => $item['item']['children'], 'level' => intval($level)+1, 'index' => $item['item']['index']])
-
                     </div>
                 </div>
               </div>

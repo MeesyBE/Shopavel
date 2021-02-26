@@ -57,24 +57,36 @@ class PageEditor extends Component
         $this->renderView();
         $this->itemCount++;
       }else{
-        $newArray;
-        foreach ($this->pageContentArray['items'] as $pageContentItems) {
-          if (isset($pageContentItems['item']['index'])) {
-            if ($pageContentItems['item']['index'] == $this->newItemIndex) {
-              $pageContentItems['item']['children'][] = $defaultArray;
-              $this->dropdownStates['div'.$this->itemCount] = false;
-
-              $this->itemCount++;
-            }
-          }
-          $newArray[] = $pageContentItems;
-        }
-        $this->pageContentArray['items'] = $newArray;
+        $this->pageContentArray['items'] = $this->loopThroughItemsAndAdd($this->pageContentArray['items'], $defaultArray);
         $this->pageContentArrayToJson();
         $this->renderView();
       }
 
 
+    }
+    public function loopThroughLevels($defaultArray){
+      // for ($i=0; $i < $this->newItemLevel; $i++) {
+      //   if($i == 0){
+      //     $levelArray = $this->loopThroughItemsAndAdd($this->pageContentArray['items'], $defaultArray);
+      //   }else{
+      //     $levelArray = $this->loopThroughItemsAndAdd($this->pageContentArray['items'], $defaultArray);
+      //   }
+      // }
+    }
+
+    public function loopThroughItemsAndAdd($items, $defaultArray){
+      foreach ($items as $pageContentItems) {
+        if (isset($pageContentItems['item']['index'])) {
+          if (!empty($pageContentItems['item']['children'][0])){
+            $pageContentItems['item']['children'] = $this->loopThroughItemsAndAdd($pageContentItems['item']['children'], $defaultArray);
+          }
+          if ($pageContentItems['item']['index'] == $this->newItemIndex) {
+            $pageContentItems['item']['children'][] = $defaultArray;
+          }
+        }
+        $newArray[] = $pageContentItems;
+      }
+      return $newArray;
     }
 
     public function addItem($level, $index){

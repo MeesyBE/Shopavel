@@ -9,8 +9,13 @@
             Save
         </button>
     </div>
-    <div class="w-full page-sidebar-items h-full bg-gray-800 text-white p-4 h-200" >
-      @include('pages.editor.sidebarItem', ['items' => $pageContentArray['items'], 'level' => 0, 'index' => 0])
+    <div class="w-full page-sidebar-items h-full bg-gray-800 text-white p-4 h-200">
+      @include('pages.editor.sidebarItem', ['items' => $pageContentArray['items'], 'level' => 0, 'index' => 0, 'button' => false])
+    </div>
+
+    <div class="flex bg-indigo-800 rounded px-4 py-2 mt-4 w-full" wire:click="addItem(0, {{ $itemCount }})">
+        <span class="material-icons align-middle"> add </span>
+        <span class="page-obj-title align-middle"> Add item </span>
     </div>
 
 

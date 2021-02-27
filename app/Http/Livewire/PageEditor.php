@@ -97,7 +97,29 @@ class PageEditor extends Component
     }
 
 
-    public function updateItemOrder($orderedIds)
+    public function updateItemOrderTop($orderedIds)
+    {
+      // dd($orderedIds);
+      $new_order = [];
+      // dd($this->pageContentArray);
+      if (count($orderedIds) > 0) {
+        foreach ($orderedIds as $key => $order) {
+          // dd($this->pageContentArray['items']);
+            $id = '';
+            $id = intval($order['value']);
+            $new_order[$key] = $this->pageContentArray['items'][$id];
+            $new_order[$key]['item']['index'] = $key;
+        }
+        $this->pageContentArray['items'] = [];
+        $this->pageContentArray['items'] = $new_order;
+      } else {
+      }
+      $this->pageContentArrayToJson();
+      $this->renderView();
+      // dd($this->pageContentJson);
+    }
+
+    public function updateItemOrderGroup($orderedIds)
     {
       // dd($orderedIds);
       $new_order = [];

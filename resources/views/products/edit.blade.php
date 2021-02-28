@@ -31,16 +31,13 @@
         <div class="form-group">
           <textarea class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" class="form-control" name="name" rows="8" cols="80"></textarea>
         </div>
+
+        @include('products.components.images')
+
       </div>
 
 
     </div>
 
-
-    {{-- <pre>
-      @php
-        print_r($products);
-      @endphp
-    </pre> --}}
 
 @stop

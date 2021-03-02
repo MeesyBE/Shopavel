@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.16.41/css/grapes.min.css">
     @livewireStyles
 
-    @livewireScripts
-    <script src="{{ asset('/js/app.js') }}" ></script>
+
 
 </head>
 
@@ -27,6 +27,11 @@
   @yield('content')
 
     {{-- <script type="text/javascript" src="/js/app.js"></script> --}}
+@livewireScripts
+<script src="{{ asset('/js/app.js') }}" ></script>
+<script src="{{ asset('/js/editor.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.16.41/grapes.min.js"></script>
+@yield('script')
 </body>
 
 </html>

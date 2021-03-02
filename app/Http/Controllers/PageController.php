@@ -37,7 +37,7 @@ class PageController extends Controller
 
     public function edit($id){
       // dd($request);
-      $page = PageEntity::find($id);
+      $page = PageEntity::with('content')->find($id);
 
       return view('pages.edit', ['page' => $page]);
     }

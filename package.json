@@ -21,5 +21,8 @@
         "postcss": "^8.2.1",
         "postcss-import": "^12.0.1",
         "tailwindcss": "^2.0.1"
+    },
+    "dependencies": {
+        "grapesjs": "^0.16.41"
     }
 }

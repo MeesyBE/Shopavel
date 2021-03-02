@@ -1,63 +1,11 @@
-<div class="h-full">
-    <div class="flex flex-row p-2 h-full">
-        <style media="screen">
-            .drag-and-drop {
-                display: flex;
-                max-width: 760px;
-                padding: 20px;
-                margin: 0 auto;
-            }
+<div class="">
+  <div class="flex bg-gray-600">
+    <button wire:click="updateContentPage()" class="m-4 px-4 py-2 bg-pink-800 hover:bg-pink-700 rounded text-white font-bold"
+            name="button">
+            Save</button>
+  </div>
+    {{-- <div class="flex flex-row p-2 h-full">
 
-            .drag-and-drop__container {
-                position: relative;
-                overflow: hidden;
-                width: 50%;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-            }
-
-            .drag-and-drop__divider {
-                padding: 10px;
-                font-size: 20px;
-                align-self: center;
-            }
-
-            .drag-and-drop__items {
-                position: relative;
-                overflow: hidden;
-                height: 100%;
-                min-height: 150px;
-                margin: 0 -1px;
-                padding-bottom: 40px;
-                border-top: 1px solid #ccc;
-            }
-
-            .drag-and-drop__items--adding {
-                background-color: #9AE6B4;
-            }
-
-            .drag-and-drop__items--removing {
-                background-color: #FBD38D;
-            }
-
-            .drag-and-drop__item {
-                padding: 15px 20px;
-                border: 1px solid #ccc;
-                border-top: 0;
-                line-height: 1;
-                cursor: move;
-                background-color: #fff;
-            }
-
-            .drag-and-drop__item:hover {
-                background-color: #eee;
-            }
-
-            .drag-and-drop__item--dragging {
-                color: #ccc !important;
-                background-color: #fff !important;
-            }
-        </style>
         @include('pages.editor.sidebar')
 
         <div class="w-4/5 ml-4 flex bg-white ">
@@ -66,7 +14,8 @@
 
 
 
-                  {!! $pageContentHtml !!}
+                    {!! $pageContentHtml !!}
+
 
 
 
@@ -82,7 +31,14 @@
             </div>
 
         </div>
-    </div>
+    </div> --}}
+
+
+    <textarea id="html" wire:model="pageContentHtmlTemp" name="html" rows="1" cols="80" class="hidden">
+      {!! $page->content->page_content ?? "" !!}
+    </textarea>
+    <textarea id="css" wire:model="pageContentStyleTemp" name="css" rows="1" cols="80" class="hidden">
+      {{ $page->content->page_style ?? "" }}
+    </textarea>
 
 </div>
-<script src="{{ asset('/js/editor.js') }}" ></script>

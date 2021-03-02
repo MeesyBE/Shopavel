@@ -15,6 +15,7 @@
 
                 wire:key="item-{{ $item['item']['index'] }}">
                 <div class="flex flex-row page-obj-item bg-gray-800 hover:bg-gray-700 p-1 w-full" >
+
                     <p class="w-1/8">
                         <span class="material-icons align-middle text-sm"
                           @if ($level == 0)

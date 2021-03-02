@@ -23,6 +23,7 @@
         "tailwindcss": "^2.0.1"
     },
     "dependencies": {
-        "grapesjs": "^0.16.41"
+        "grapesjs": "^0.16.41",
+        "grapesjs-blocks-basic": "^0.1.8"
     }
 }

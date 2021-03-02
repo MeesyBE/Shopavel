@@ -24,12 +24,9 @@
           <label for="">product title </label>
           <input name="product_name" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $product->product_name }}" />
         </div>
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="">URL key </label>
           <input name="url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $product->product_url_key }}" />
-        </div>
-        <div class="form-group">
-          <textarea class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" class="form-control" name="name" rows="8" cols="80"></textarea>
         </div>
 
         @include('products.components.images')

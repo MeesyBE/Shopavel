@@ -30,7 +30,7 @@
 @livewireScripts
 <script src="{{ asset('/js/app.js') }}" ></script>
 <script src="{{ asset('/js/editor.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.16.41/grapes.min.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.16.41/grapes.min.js"></script> --}}
 @yield('script')
 </body>
 

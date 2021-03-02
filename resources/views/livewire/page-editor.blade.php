@@ -1,6 +1,11 @@
 <div class="">
   <div class="flex bg-gray-600">
-    <button wire:click="updateContentPage()" class="m-4 px-4 py-2 bg-pink-800 hover:bg-pink-700 rounded text-white font-bold"
+    <a href="{{ route('pages.index') }}">
+      <button wire:click="updateContentPage()" class="m-4 px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold"
+              name="button">
+              Cancel</button>
+    </a>
+    <button wire:click="updateContentPage()" class="my-4 px-4 py-2 bg-pink-800 hover:bg-pink-700 rounded text-white font-bold"
             name="button">
             Save</button>
   </div>

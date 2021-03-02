@@ -1,4 +1,4 @@
-<div x-show="{{ $addImage ?? 'false '}}" class="fixed z-10 inset-0 overflow-y-auto ">
+<div x-show="addImage" class="fixed z-10 inset-0 overflow-y-auto ">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
         <!--
           Background overlay, show/hide based on modal state.

@@ -5,8 +5,8 @@
 
         </div>
         <div class="mt-10">
-            <div class="" x-data="{ addImage = false }">
-                <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded inline-flex items-center ml-4" x-on:click="addImage = true" name="button">Add Image</button>
+            <div class="" x-data="{ addImage: false }">
+                <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded inline-flex items-center ml-4" x-on:click.prevent="addImage = true" name="button">Add Image</button>
                 @include('products.components.addImage')
 
             </div>

@@ -11,14 +11,12 @@
 
 
     <!-- Splash screen styles -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css" rel="stylesheet">
     {{-- <link rel="stylesheet" href="/css/layout.css"> --}}
 </head>
 
 <body class="" >
-    <div class="wrapper">
         @yield('content')
-    </div>
 </body>
 
 </html>

@@ -63,7 +63,7 @@
             </div>
             @isset($view)
             @if ($view == 'default')
-            <div class="content">
+            <div class="content h-full">
                 <div class="flex flex-col flex-auto w-full px-4 py-8 xs:p-2">
                     <div class="flex flex-wrap w-full">
                         <div class="flex flex-auto min-w-80  p-4">
@@ -78,7 +78,7 @@
             @yield('content')
             @endif
             @else
-            <div class="content justify-between">
+            <div class="content justify-between h-full">
                 <div class="flex flex-col flex-auto w-full px-4 py-8 xs:p-2">
                     <div class="flex flex-wrap w-full">
                         <div class="flex flex-auto min-w-80  p-4">

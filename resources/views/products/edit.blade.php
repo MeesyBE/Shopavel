@@ -31,6 +31,9 @@
 
         @include('products.components.images')
 
+        @include('products.components.attributes')
+
+
       </div>
 
 

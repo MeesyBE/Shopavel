@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PluginController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\FrontendController;
@@ -51,6 +52,13 @@ Route::get('/admin/categories/new', [CategoryController::class, 'new'])->middlew
 Route::post('/admin/categories/create', [CategoryController::class, 'create'])->middleware('auth')->name('categories.create');
 Route::get('/admin/categories/edit/{id}', [CategoryController::class, 'edit'])->middleware('auth')->name('categories.edit');
 Route::post('/admin/categories/save/{id}', [CategoryController::class, 'save'])->middleware('auth')->name('categories.save');
+
+Route::get('/admin/menus', [MenuController::class, 'list'])->middleware('auth')->name('menus.index');
+Route::get('/admin/menus/new', [MenuController::class, 'new'])->middleware('auth')->name('menus.new');
+Route::post('/admin/menus/create', [MenuController::class, 'create'])->middleware('auth')->name('menus.create');
+Route::post('/admin/menus/{id}/create', [MenuController::class, 'createItem'])->middleware('auth')->name('menus.create.item');
+Route::get('/admin/menus/edit/{id}', [MenuController::class, 'edit'])->middleware('auth')->name('menus.edit');
+Route::post('/admin/menus/save/{id}', [MenuController::class, 'save'])->middleware('auth')->name('menus.save');
 
 Route::get('/admin/plugins', [PluginController::class, 'list'])->middleware('auth')->name('plugins.index');
 

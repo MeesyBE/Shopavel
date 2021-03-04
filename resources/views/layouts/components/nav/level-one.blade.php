@@ -28,11 +28,18 @@
     </div>
 
 
-
     <div class="mx-4">
         <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*products*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('products.index') }}">
             <span class="material-icons shopavel-vertical-navigation-item-icon">shopping_cart</span>
             <div class="ml-4 font-semibold">Products</div>
+        </a>
+    </div>
+
+
+    <div class="mx-4">
+        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*menus*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('menus.index') }}">
+            <span class="material-icons shopavel-vertical-navigation-item-icon">account_tree</span>
+            <div class="ml-4 font-semibold">Menus</div>
         </a>
     </div>
 

@@ -15,7 +15,7 @@ class CreateCategoryEntitiesTable extends Migration
     {
         Schema::create('category_entities', function (Blueprint $table) {
             $table->id();
-            $table->string('category_name')->nullable();
+            $table->string('category_name');
             $table->longText('category_description')->nullable();
             $table->string('category_url_key')->nullable()->unique();
             $table->integer('category_status')->default(0);

@@ -1,7 +1,7 @@
 <div class="flex flex-col border px-4 my-4" x-data="{ openSeo: false }">
     <div class="flex flex-row w-full justify-between" x-on:click.prevent="openSeo = !openSeo">
         <div class="my-4">
-            <p class="text-2xl font-bold">SEO</p>
+            <p class="text-2xl font-bold">Content</p>
 
         </div>
         <div class="my-4">

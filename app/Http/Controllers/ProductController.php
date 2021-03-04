@@ -52,9 +52,14 @@ class ProductController extends Controller
     // dd($request);
     $product = ProductEntity::find($id);
 
+    if ($request->product_enable == "on") {
+      $product->product_status = 1;
+    }else{
+      $product->product_status = 0;
+    }
+
     $product->product_name = $request->product_name;
     $product->product_url_key = $request->url_key;
-    $product->product_status = 0;
     $product->product_type = 0;
     $product->product_layout = 0;
     $product->product_created_by = Auth::id();

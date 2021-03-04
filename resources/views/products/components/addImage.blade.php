@@ -11,7 +11,7 @@
             To: "opacity-0"
         -->
         <div class="fixed inset-0 transition-opacity" aria-hidden="true" >
-            <div class="absolute inset-0 bg-gray-500 opacity-75"  @click="addImage = false"></div>
+            <div class="absolute inset-0 bg-gray-500 opacity-75" @click="addImage = false"></div>
         </div>
 
         <!-- This element is to trick the browser into centering the modal contents. -->

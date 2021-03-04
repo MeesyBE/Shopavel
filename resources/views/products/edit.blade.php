@@ -54,9 +54,8 @@
 
         @include('products.components.images')
 
-        @include('products.components.content')
 
-        @include('products.components.attributes')
+        @livewire('product-attributes')
 
         @include('products.components.seo')
 

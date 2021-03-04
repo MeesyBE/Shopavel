@@ -1,49 +1,56 @@
-@extends('layouts.layout')
+@extends('layouts.shopavel', [
+  'title' => 'Categories',
+  'subtitle' => 'Edit categories',
+  'buttontekst' => 'New Category',
+  'buttonlink' => route('categories.new'),
+  'buttonicon' => 'add',
+  'view' => 'default',
+])
 @section('content')
-    <div class="flex flex-row justify-between">
-      <h1 class="content-title font-size-24">Categories</h1>
-      <a href="{{ route('categories.new') }}">
-        <button class="btn"><span class="fas fa-plus"></span></button>
-      </a>
-    </div>
 
-    <div class="flex flex-row justify-between">
-      <table class="table table-striped">
-        <thead>
+<div class="table-wrapper p-4">
+    <table class="table-auto min-w-full">
+      <thead class="bg-gray-50">
           <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Url_key</th>
-            <th class="text-right">Action</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              #
+            </th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Title
+            </th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              URL key
+            </th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Active
+            </th>
+            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Action
+            </th>
           </tr>
-        </thead>
-        <tbody>
-          @foreach ($categories as $categorie)
+      </thead>
+      <tbody>
+          @foreach ($categories as $category)
             <tr>
-              <th>{{ $categorie->id }}</th>
-              <td>{{ $categorie->categorie_name }}</td>
-              <td>{{ $categorie->categorie_url_key }}</td>
-              <td class="text-right">
-                <a href="{{ route('categories.edit', $categorie->id) }}">
-                  <button type="button" name="button">
-                    Edit
-                  </button>
-                </a>
-              </td>
+                <td class="px-6 py-2 "> {{ $category->id }} </td>
+                <td class="px-6 py-2 ">  {{ $category->category_name }} </td>
+                <td class="px-6 py-2 ">{{ $category->category_url_key }} </td>
+                <td class="px-6 py-2 ">{{ $category->category_status }}</td>
+
+                <td class="px-6 py-2 text-right">
+                  <a href="{{ route('categories.edit', $category->id) }}">
+                    <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded">
+                      Edit
+                    </button>
+                  </a>
+                </td>
+
             </tr>
           @endforeach
 
         </tbody>
-      </table>
-    </div>
 
-
-
-
-    {{-- <pre>
-      @php
-        print_r($categories);
-      @endphp
-    </pre> --}}
+    </table>
+</div>
 
 @stop

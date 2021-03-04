@@ -50,7 +50,7 @@ Route::get('/admin/categories', [CategoryController::class, 'list'])->middleware
 Route::get('/admin/categories/new', [CategoryController::class, 'new'])->middleware('auth')->name('categories.new');
 Route::post('/admin/categories/create', [CategoryController::class, 'create'])->middleware('auth')->name('categories.create');
 Route::get('/admin/categories/edit/{id}', [CategoryController::class, 'edit'])->middleware('auth')->name('categories.edit');
-Route::post('/admin/categories/save', [CategoryController::class, 'save'])->middleware('auth')->name('categories.save');
+Route::post('/admin/categories/save/{id}', [CategoryController::class, 'save'])->middleware('auth')->name('categories.save');
 
 Route::get('/admin/plugins', [PluginController::class, 'list'])->middleware('auth')->name('plugins.index');
 

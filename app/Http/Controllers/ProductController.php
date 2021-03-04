@@ -62,7 +62,6 @@ class ProductController extends Controller
     $product->product_url_key = $request->url_key;
     $product->product_type = 0;
     $product->product_layout = 0;
-    $product->product_created_by = Auth::id();
     $product->product_last_updated_by = Auth::id();
 
     $product->save();

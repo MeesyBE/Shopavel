@@ -17,7 +17,12 @@ class CreateCategoryEntitiesTable extends Migration
             $table->id();
             $table->string('category_name')->nullable();
             $table->longText('category_description')->nullable();
-            $table->string('category_slug')->nullable()->unique();
+            $table->string('category_url_key')->nullable()->unique();
+            $table->integer('category_status')->default(0);
+            $table->integer('category_type')->default(0);
+            $table->integer('category_layout')->default(0);
+            $table->integer('category_created_by');
+            $table->integer('category_last_updated_by');
             $table->timestamps();
             $table->softDeletes();
         });

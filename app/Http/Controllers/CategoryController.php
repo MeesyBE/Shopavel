@@ -20,24 +20,47 @@ class CategoryController extends Controller
 
   public function create(Request $request){
     // dd($request);
-    $Category = new CategoryEntity;
+    $category = new CategoryEntity;
 
-    $Category->Category_name = $request->Category_name;
-    $Category->Category_url_key = $request->url_key;
-    $Category->Category_status = 0;
-    $Category->Category_type = 0;
-    $Category->Category_layout = 0;
-    $Category->Category_created_by = Auth::id();
-    $Category->Category_last_updated_by = Auth::id();
+    $category->category_name = $request->category_name;
+    $category->category_url_key = $request->category_url_key;
+    $category->category_status = 0;
+    $category->category_type = 0;
+    $category->category_layout = 0;
+    $category->category_created_by = Auth::id();
+    $category->category_last_updated_by = Auth::id();
 
-    $Category->save();
+    $category->save();
     return redirect('/admin/categories');
   }
 
   public function edit($id){
     // dd($request);
-    $Category = CategoryEntity::find($id);
+    $category = CategoryEntity::find($id);
 
-    return view('categories.edit', ['Category' => $Category]);
+    return view('categories.edit', ['category' => $category]);
   }
+
+  public function save(Request $request, $id){
+    // dd($request);
+    $category = CategoryEntity::find($id);
+
+    if ($request->category_enable == "on") {
+      $category->category_status = 1;
+    }else{
+      $category->category_status = 0;
+    }
+
+    $category->category_name = $request->category_name;
+    $category->category_url_key = $request->category_url_key;
+    $category->category_type = 0;
+    $category->category_layout = 0;
+    $category->category_last_updated_by = Auth::id();
+
+    $category->save();
+
+
+    return back();
+  }
+
 }

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ProductEntity;
-use App\Models\ProductPrices;
+use App\Models\ProductPrice;
 use App\Models\ProductAttribute;
 use Auth;
 
@@ -66,7 +66,10 @@ class ProductController extends Controller
     $product->product_last_updated_by = Auth::id();
 
     $product->save();
-
+    if(empty($product->price)){
+      $product->price = new ProductPrice;
+      $product->price->product_id = $id;
+    }
     $product->price->product_price = $request->product_price;
     $product->price->product_discount_price = $request->product_discount_price;
     $product->price->save();

@@ -1,5 +1,5 @@
 @extends('layouts.shopavel', [
-  'title' => 'Categories',
+  'title' => 'Menus',
   'subtitle' => 'Edit menus',
   'buttontekst' => 'New Menu',
   'buttonlink' => route('menus.new'),
@@ -18,9 +18,7 @@
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
               Title
             </th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-              URL key
-            </th>
+
             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Active
             </th>
@@ -34,7 +32,6 @@
             <tr>
                 <td class="px-6 py-2 "> {{ $menu->id }} </td>
                 <td class="px-6 py-2 ">  {{ $menu->menu_name }} </td>
-                <td class="px-6 py-2 ">{{ $menu->menu_url_key }} </td>
                 <td class="px-6 py-2 ">{{ $menu->menu_status }}</td>
 
                 <td class="px-6 py-2 text-right">

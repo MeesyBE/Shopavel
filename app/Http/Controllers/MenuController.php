@@ -23,10 +23,8 @@ class MenuController extends Controller
     $menu = new Menu;
 
     $menu->menu_name = $request->menu_name;
-    $menu->menu_url_key = $request->menu_url_key;
     $menu->menu_status = 0;
     $menu->menu_type = 0;
-    $menu->menu_layout = 0;
     $menu->menu_created_by = Auth::id();
     $menu->menu_last_updated_by = Auth::id();
 

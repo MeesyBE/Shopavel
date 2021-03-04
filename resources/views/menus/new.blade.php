@@ -1,4 +1,4 @@
-@extends('layouts.shopavel', ['title' => 'Categories', 'subtitle' => 'New Menu'])
+@extends('layouts.shopavel', ['title' => 'Menus', 'subtitle' => 'New Menu'])
 @section('content')
   <div class="flex flex-row p-4">
       <h1 class="content-title font-size-24">New menu</h1>
@@ -11,11 +11,7 @@
         <label for="full-name" class="required">menu name</label>
         <input type="text" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" id="menu_name" name="menu_name" placeholder="menu name" required="required">
       </div>
-
-      <div class="form-group">
-        <label for="full-name" class="required">URL key</label>
-        <input type="text" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" id="url_key" name="url_key" value="/" required="required">
-      </div>
+    
     </form>
   </div>
     <div class="flex min-w-full flex-row p-4">

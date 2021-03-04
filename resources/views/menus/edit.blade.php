@@ -1,4 +1,4 @@
-@extends('layouts.shopavel', ['title' => 'Categories', 'subtitle' => 'Edit category'])
+@extends('layouts.shopavel', ['title' => 'Menus', 'subtitle' => 'Edit menu'])
 @section('content')
 <style media="screen">
   /* CHECKBOX TOGGLE SWITCH */
@@ -31,13 +31,13 @@
 
 </div>
 
-<form class="flex w-full" id="SaveMenu" action="{{ route('menus.save', $category->id) }}" method="post">
+<form class="flex w-full" id="SaveMenu" action="{{ route('menus.save', $menu->id) }}" method="post">
   {{ csrf_field() }}
   <div class="p-4 w-full">
       <label for="">Enable product: </label>
       <div class="relative inline-block w-10 ml-2 align-middle select-none transition duration-200 ease-in">
-          <input type="checkbox" name="category_enable" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-          @if ($category->category_status == 1) checked @endif
+          <input type="checkbox" name="menu_enable" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+          @if ($menu->menu_status == 1) checked @endif
           />
           <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
       </div>
@@ -45,13 +45,10 @@
 
     <div class="">
       <div class="form-group">
-        <label for="">category title </label>
-        <input name="category_name" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $category->category_name }}" />
+        <label for="">menu title </label>
+        <input name="menu_name" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $menu->menu_name }}" />
       </div>
-      <div class="form-group mt-4">
-        <label for="">URL key </label>
-        <input name="category_url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800"  type="text" value="{{ $category->category_url_key }}" />
-      </div>
+
       <div class="form-group mt-4">
         <textarea class="form-control"  rows="8" cols="80"></textarea>
       </div>

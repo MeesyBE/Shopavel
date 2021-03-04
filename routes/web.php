@@ -7,6 +7,7 @@ use App\Http\Controllers\PluginController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\FrontendController;
 
@@ -59,6 +60,8 @@ Route::post('/admin/menus/create', [MenuController::class, 'create'])->middlewar
 Route::post('/admin/menus/{id}/create', [MenuController::class, 'createItem'])->middleware('auth')->name('menus.create.item');
 Route::get('/admin/menus/edit/{id}', [MenuController::class, 'edit'])->middleware('auth')->name('menus.edit');
 Route::post('/admin/menus/save/{id}', [MenuController::class, 'save'])->middleware('auth')->name('menus.save');
+
+Route::get('/admin/layout', [LayoutController::class, 'index'])->middleware('auth')->name('layout.index');
 
 Route::get('/admin/plugins', [PluginController::class, 'list'])->middleware('auth')->name('plugins.index');
 

@@ -45,6 +45,14 @@
 
 
     <div class="mx-4">
+        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*layout*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('layout.index') }}">
+            <span class="material-icons shopavel-vertical-navigation-item-icon">design_services</span>
+            <div class="ml-4 font-semibold">Layout</div>
+        </a>
+    </div>
+
+
+    <div class="mx-4">
         <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*plugins*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('plugins.index') }}">
             <span class="material-icons shopavel-vertical-navigation-item-icon">extension</span>
             <div class="ml-4 font-semibold">Plugins</div>

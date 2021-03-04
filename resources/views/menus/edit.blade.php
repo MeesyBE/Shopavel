@@ -34,14 +34,6 @@
 <form class="flex w-full" id="SaveMenu" action="{{ route('menus.save', $menu->id) }}" method="post">
   {{ csrf_field() }}
   <div class="p-4 w-full">
-      <label for="">Enable product: </label>
-      <div class="relative inline-block w-10 ml-2 align-middle select-none transition duration-200 ease-in">
-          <input type="checkbox" name="menu_enable" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-          @if ($menu->menu_status == 1) checked @endif
-          />
-          <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
-      </div>
-
 
     <div class="">
       <div class="form-group">
@@ -49,9 +41,7 @@
         <input name="menu_name" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $menu->menu_name }}" />
       </div>
 
-      <div class="form-group mt-4">
-        <textarea class="form-control"  rows="8" cols="80"></textarea>
-      </div>
+      @livewire('menu-items', ['id' => $id])
 
     </div>
 

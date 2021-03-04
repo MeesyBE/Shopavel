@@ -36,7 +36,7 @@ class MenuController extends Controller
     // dd($request);
     $menu = Menu::find($id);
 
-    return view('menus.edit', ['menu' => $menu]);
+    return view('menus.edit', ['menu' => $menu, 'id' => $id]);
   }
 
   public function save(Request $request, $id){
@@ -50,9 +50,7 @@ class MenuController extends Controller
     }
 
     $menu->menu_name = $request->menu_name;
-    $menu->menu_url_key = $request->menu_url_key;
     $menu->menu_type = 0;
-    $menu->menu_layout = 0;
     $menu->menu_last_updated_by = Auth::id();
 
     $menu->save();

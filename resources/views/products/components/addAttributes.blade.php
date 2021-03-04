@@ -17,23 +17,31 @@
 
 
                         <div class="flex flex-col mt-2">
-                          <div class="form-group w-full">
+                          <div class="form-group">
+                            <label for="product_attribute_key">Attribute key</label>
+                            <input name="product_attribute_key" id="product_attribute_key"
+                            class="w-full border bg-white rounded px-3 py-2 outline-none"
+                            wire:model="newProductAttributekey" />
+                          </div>
+                          <div class="form-group mt-4">
                             <label for="product_attribute_name">Attribute name</label>
                             <input name="product_attribute_name" id="product_attribute_name"
-                            class="w-full border bg-white rounded px-3 py-2 outline-none"/>
+                            class="w-full border bg-white rounded px-3 py-2 outline-none"
+                            wire:model="newProductAttributeName" />
                           </div>
                           <div class="form-group mt-4">
                             <label for="product_attribute_type">Attribute type</label>
                             <select name="product_attribute_type" id="product_attribute_type"
-                            class="w-full border bg-white rounded px-3 py-2 outline-none">
-                                <option value="0" class="py-1">Text</option>
-                                <option value="0"  class="py-1">Option</option>
-                                <option value="0"  class="py-1">Multi option</option>
+                            class="w-full border bg-white rounded px-3 py-2 outline-none"
+                            wire:model="newProductAttributeType">
+                                <option value="0" class="py-1" selected>Text</option>
+                                <option value="1"  class="py-1">Option</option>
+                                <option value="2"  class="py-1">Multi option</option>
                             </select>
                           </div>
                           <div class="form-group mt-4">
                             <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded inline-flex items-center"
-                            name="button">Create</button>
+                             wire:click.prevent="createNewAttribute">Create</button>
                           </div>
 
                         </div>

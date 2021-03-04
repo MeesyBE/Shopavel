@@ -17,9 +17,9 @@ class CreateProductPricesTable extends Migration
             $table->id();
             $table->integer('product_id');
             $table->float('product_price', '9', '2');
-            $table->float('product_dicount_price', '9', '2')->nullable();
-            $table->dateTime('product_dicount_price_from')->nullable();
-            $table->dateTime('product_dicount_price_to')->nullable();
+            $table->float('product_discount_price', '9', '2')->nullable();
+            $table->dateTime('product_discount_price_from')->nullable();
+            $table->dateTime('product_discount_price_to')->nullable();
             $table->timestamps();
         });
     }

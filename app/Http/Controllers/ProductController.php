@@ -4,19 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ProductEntity;
+use App\Models\ProductPrices;
+use App\Models\ProductAttribute;
 use Auth;
 
 class ProductController extends Controller
 {
   public function __construct()
   {
-      $this->middleware(function ($request, $next) {
-          $this->user= Auth::user();
 
-          return $next($request);
-      });
   }
-  
+
   public function list(){
     $products = ProductEntity::where('product_status', '!=', '-1')->get();
     return view('products.list', ['products' => $products]);
@@ -45,9 +43,30 @@ class ProductController extends Controller
 
   public function edit($id){
     // dd($request);
-    $product = ProductEntity::find($id);
+    $product = ProductEntity::with('price')->find($id);
 
     return view('products.edit', ['product' => $product]);
+  }
+
+  public function save(Request $request, $id){
+    // dd($request);
+    $product = ProductEntity::find($id);
+
+    $product->product_name = $request->product_name;
+    $product->product_url_key = $request->url_key;
+    $product->product_status = 0;
+    $product->product_type = 0;
+    $product->product_layout = 0;
+    $product->product_created_by = Auth::id();
+    $product->product_last_updated_by = Auth::id();
+
+    $product->save();
+
+    $product->price->product_price = $request->product_price;
+    $product->price->product_discount_price = $request->product_discount_price;
+    $product->price->save();
+
+    return back();
   }
 
 }

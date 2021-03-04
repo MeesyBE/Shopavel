@@ -44,7 +44,7 @@ Route::get('/admin/products', [ProductController::class, 'list'])->middleware('a
 Route::get('/admin/products/new', [ProductController::class, 'new'])->middleware('auth')->name('products.new');
 Route::post('/admin/products/create', [ProductController::class, 'create'])->middleware('auth')->name('products.create');
 Route::get('/admin/products/edit/{id}', [ProductController::class, 'edit'])->middleware('auth')->name('products.edit');
-Route::post('/admin/products/save', [ProductController::class, 'save'])->middleware('auth')->name('products.save');
+Route::post('/admin/products/save/{id}', [ProductController::class, 'save'])->middleware('auth')->name('products.save');
 
 Route::get('/admin/categories', [CategoryController::class, 'list'])->middleware('auth')->name('categories.index');
 Route::get('/admin/categories/new', [CategoryController::class, 'new'])->middleware('auth')->name('categories.new');

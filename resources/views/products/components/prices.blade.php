@@ -19,12 +19,12 @@
     <div class="my-4 w-full">
         <div class="form-group">
             <label for="">Price </label>
-            <input name="product_price" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="number" value="{{ $product->price->product_price }}" />
+            <input name="product_price" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="number" value="{{ $product->price->product_price ?? "" }}" />
         </div>
         <div class="form-group mt-4">
             <label for="">Discount price </label><small class="text-gray-500 text-2xs">Leave empty for no discount</small>
             <input name="product_discount_price" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="number"
-              value="{{ $product->price->product_discount_price }}" />
+              value="{{ $product->price->product_discount_price ?? "" }}" />
         </div>
     </div>
 </div>

@@ -10,6 +10,7 @@ class MenuItems extends Component
 {
     public $menuId;
     public $menuItems;
+    public $menuItemsLayout;
     public $newMenuItemName;
     public $newMenuItemParent;
     public $newMenuItemHref = "/";
@@ -17,7 +18,20 @@ class MenuItems extends Component
     public function mount($id)
     {
       $this->menuId = $id;
-      $this->menuItems = Menuitem::where('menu_id', '=', $id)->get();
+      $this->menuItems = Menuitem::where([['menu_id', '=', $id], ['menu_item_parent_id', '=', '0']])->get();
+      $this->menuItemsLayout = $this->menuAddChildrens($this->menuItems);
+    }
+
+    public function menuAddChildrens($menuItems)
+    {
+      $menuArray;
+      foreach ($menuItems->toArray() as $menuItem) {
+        $menuChildren = Menuitem::where([['menu_id', '=', $this->menuId], ['menu_item_parent_id', '=', $menuItem['id']]])->get();
+        $menuItem['children'] = $this->menuAddChildrens($menuChildren);
+        $menuArray[] = $menuItem;
+      }
+      return $menuArray ?? [];
+
     }
 
     public function createNewMenuItem()

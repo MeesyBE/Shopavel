@@ -40,16 +40,12 @@
       <div class="w-full m-4">
         <p class="text-2xl font-bold">Menu Items</p>
         <div class="w-full mt-4">
-          @foreach ($menuItems as $menuItem)
-            <div class="flex flex-row border rounded">
-              <div class="flex w-1/4 m-4">
-                {{ $menuItem->menu_item_name }}
-              </div>
-              <div class="flex w-1/4 m-4">
-                {{ $menuItem->menu_item_parent_id }}
-              </div>
-            </div>
-          @endforeach
+          {{-- <pre>
+            @php
+              print_r($menuItemsLayout);
+            @endphp
+          </pre> --}}
+          @include('menus.components.menuitems', ['items' => $menuItemsLayout])
         </div>
       </div>
     </div>

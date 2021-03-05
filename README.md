@@ -36,6 +36,8 @@ then install composer and front-end modules:
      composer install
 
      npm install
+     
+     npm run dev
 
 and last:
 

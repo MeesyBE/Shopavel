@@ -21,6 +21,7 @@ Shopavel is an open-source e-commerce platform written in PHP 8 and build on Lar
 ## Feel free to contribute!
 The aim of shopavel is to become the most user-friendly webshop software without sacrificing functionality.
 
+## Installation
 Start with cloning:
 
      git clone https://github.com/MeesyBE/Shopavel.git

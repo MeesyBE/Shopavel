@@ -30,3 +30,7 @@ and last:
 
 
 Try shopavel!
+
+
+## Discord
+Join the discord channel: https://discord.gg/Re4e2BYj

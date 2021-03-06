@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://twitter.com/intent/tweet?text=?text=Shopavel%20E-commerce%20Platform&url=https://github.com/MeesyBE/Shopavel&via=github&hashtags=shopavel,laravel,livewire,tailwindcss,developers">
+    <a href="https://twitter.com/intent/tweet?text=Shopavel%20E-commerce%20Platform&url=https://github.com/MeesyBE/Shopavel&via=github&hashtags=shopavel,laravel,livewire,tailwindcss,developers">
         <img src="https://img.shields.io/twitter/url/https/github.com/topengineer/laravel-ecommerce.svg?style=social"
             alt="Tweet"></a>
     <a href="https://github.com/MeesyBE/Shopavel/issues">

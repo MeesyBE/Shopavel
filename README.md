@@ -1,4 +1,7 @@
 <p align="center">
+    <a href="https://twitter.com/intent/tweet?text=?text=Shopavel%20E-commerce%20Platform&url=https://github.com/MeesyBE/Shopavel&via=github&hashtags=shopavel,laravel,livewire,tailwindcss,developers">
+        <img src="https://img.shields.io/twitter/url/https/github.com/topengineer/laravel-ecommerce.svg?style=social"
+            alt="Tweet"></a>
     <a href="https://github.com/MeesyBE/Shopavel/issues">
         <img src="https://img.shields.io/github/issues/MeesyBE/Shopavel.svg"
             alt="Issues"></a>
@@ -11,7 +14,10 @@
     <a href="https://github.com/YolanMees/">
         <img src="https://img.shields.io/github/followers/YolanMees.svg?style=social&label=Follow"
             alt="Followers"></a>
+    
 </p>
+
+
 
 ![alt text](https://shopavel.com/wp-content/uploads/2021/02/Schermafbeelding-2021-02-18-om-08.56.01.png)
 

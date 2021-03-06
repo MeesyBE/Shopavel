@@ -48,6 +48,13 @@ and last:
 
 Try shopavel!
 
+## To Do
+
+- Advanced fronted slug router
+- Layout builder
+- Multilingual content
+- Plugins
+
 
 ## Discord
 Join the discord channel: https://discord.gg/Re4e2BYj

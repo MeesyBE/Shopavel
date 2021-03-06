@@ -33,10 +33,7 @@ class MenuController extends Controller
   }
 
   public function edit($id){
-    // dd($request);
-    $menu = Menu::find($id);
-
-    return view('menus.edit', ['menu' => $menu, 'id' => $id]);
+    return view('menus.edit', ['id' => $id]);
   }
 
   public function save(Request $request, $id){

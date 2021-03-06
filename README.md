@@ -1,20 +1,16 @@
 <p align="center">
     <a href="https://twitter.com/intent/tweet?text=Shopavel%20E-commerce%20Platform&url=https://github.com/MeesyBE/Shopavel&via=github&hashtags=shopavel,laravel,livewire,tailwindcss,developers">
-        <img src="https://img.shields.io/twitter/url/https/github.com/topengineer/laravel-ecommerce.svg?style=social"
-            alt="Tweet"></a>
+        <img src="https://img.shields.io/twitter/url/https/github.com/topengineer/laravel-ecommerce.svg?style=social" alt="Tweet">
+    </a>
     <a href="https://github.com/MeesyBE/Shopavel/issues">
-        <img src="https://img.shields.io/github/issues/MeesyBE/Shopavel.svg"
-            alt="Issues"></a>
+        <img src="https://img.shields.io/github/issues/MeesyBE/Shopavel.svg" alt="Issues">
+    </a>
      <a href="https://github.com/MeesyBE/Shopavel/fork">
-        <img src="https://img.shields.io/github/forks/MeesyBE/Shopavel.svg?style=social&label=Fork"
-            alt="Forks"></a>
+        <img src="https://img.shields.io/github/forks/MeesyBE/Shopavel.svg?style=social&label=Fork" alt="Forks">
+    </a>
     <a href="https://github.com/MeesyBE/Shopavel/stargazers">
-        <img src="https://img.shields.io/github/stars/MeesyBE/Shopavel.svg?style=social&label=Stars"
-            alt="Stars"></a>
-    <a href="https://github.com/YolanMees/">
-        <img src="https://img.shields.io/github/followers/YolanMees.svg?style=social&label=Follow"
-            alt="Followers"></a>
-    
+        <img src="https://img.shields.io/github/stars/MeesyBE/Shopavel.svg?style=social&label=Stars" alt="Stars">
+    </a>
 </p>
 
 

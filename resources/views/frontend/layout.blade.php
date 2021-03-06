@@ -16,6 +16,9 @@
 </head>
 
 <body class="" >
+  <div class="flex bg-gray-400">
+    @include('frontend.nav')
+  </div>
         @yield('content')
 </body>
 

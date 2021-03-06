@@ -11,7 +11,7 @@ class PageEntity extends Model
     use HasFactory;
 
 
-    public function content()
+   public function content()
    {
        return $this->hasOne(PageContent::class, 'page_id');
    }

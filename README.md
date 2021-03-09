@@ -56,6 +56,7 @@ Try shopavel!
 
 - Advanced fronted slug router
 - Layout builder
+- Default theme
 - Multilingual content
 - Multi site
 - Plugins

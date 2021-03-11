@@ -16,8 +16,9 @@
 </head>
 
 <body class="" >
-  <div class="flex bg-gray-400">
-    @include('frontend.nav')
+  @include('frontend.nav')
+  
+  <div class="flex bg-gray-400 m-4">
   </div>
         @yield('content')
 </body>

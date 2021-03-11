@@ -3,37 +3,28 @@
     print_r($menu);
   @endphp
 </pre> --}}
-<style media="screen">
-nav{
-  overflow: hidden;
-}
-nav ul {
-  list-style-type: none;
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-nav ul li{
-  display: inline;
-}
-nav ul li a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-</style>
 <nav>
   <ul>
-    @foreach ($menu->menuItems as $menuitem)
-      <li>
-        <a href="{{ $menuitem->menu_item_href }}">
-          {{ $menuitem->menu_item_name }}
-        </a>
-      </li>
-    @endforeach
+
   </ul>
 </nav>
+
+
+<header class="bg-white">
+    <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+            <div class="w-full text-gray-700 md:text-center text-2xl font-semibold">
+                Logo
+            </div>
+        </div>
+        <nav :class="isOpen ? '' : 'hidden'" class="sm:flex sm:justify-center sm:items-center mt-4 hidden">
+            <div class="flex flex-col sm:flex-row">
+              @foreach ($menu->menuItems as $menuitem)
+                  <a class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="{{ $menuitem->menu_item_href }}">
+                    {{ $menuitem->menu_item_name }}
+                  </a>
+              @endforeach
+            </div>
+        </nav>
+    </div>
+</header>

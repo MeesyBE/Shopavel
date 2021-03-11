@@ -32,7 +32,7 @@
     components: '{!! addslashes($page->content->page_content ?? "") !!}',
     style: "{{ $page->content->page_style ?? "* {box-sizing: border-box;}body {margin: 0;}" }}",
     canvas: {
-       styles: ['https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.16.41/css/grapes.min.css'],
+       styles: ['https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css'],
    },
     blockManager: {
         blocks: [

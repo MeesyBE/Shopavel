@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\PageEntity;
+use App\Models\Slug;
 use Auth;
 
 class PageController extends Controller
@@ -22,7 +23,6 @@ class PageController extends Controller
     public function create(Request $request){
       // dd($request);
       $page = new PageEntity;
-
       $page->page_name = $request->page_name;
       $page->page_url_key = $request->url_key;
       $page->page_status = 0;
@@ -30,8 +30,15 @@ class PageController extends Controller
       $page->page_layout = 0;
       $page->page_created_by = Auth::id();
       $page->page_last_updated_by = Auth::id();
-
       $page->save();
+
+      $slug = new Slug;
+      $slug->slug_request = $request->url_key;
+      $slug->slug_type = 0;
+      $slug->slugmodel_id = $page->id;
+      $slug->slugmodel_type = 'App\Models\PageEntity';
+      $slug->save();
+
       return redirect('/admin/pages');
     }
 

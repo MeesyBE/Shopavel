@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CategoryEntity;
+use App\Models\Slug;
 use Auth;
 
 class CategoryController extends Controller
@@ -31,6 +32,14 @@ class CategoryController extends Controller
     $category->category_last_updated_by = Auth::id();
 
     $category->save();
+
+    $slug = new Slug;
+    $slug->slug_request = $request->url_key;
+    $slug->slug_type = 0;
+    $slug->slugmodel_id = $page->id;
+    $slug->slugmodel_type = 'App\Models\CategoryEntity';
+    $slug->save();
+
     return redirect('/admin/categories');
   }
 

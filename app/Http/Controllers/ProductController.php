@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\ProductEntity;
 use App\Models\ProductPrice;
 use App\Models\ProductAttribute;
+use App\Models\Slug;
 use Auth;
 
 class ProductController extends Controller
@@ -28,7 +29,6 @@ class ProductController extends Controller
   public function create(Request $request){
     // dd($request);
     $product = new productEntity;
-
     $product->product_name = $request->product_name;
     $product->product_url_key = $request->url_key;
     $product->product_status = 0;
@@ -36,8 +36,15 @@ class ProductController extends Controller
     $product->product_layout = 0;
     $product->product_created_by = Auth::id();
     $product->product_last_updated_by = Auth::id();
-
     $product->save();
+
+    $slug = new Slug;
+    $slug->slug_request = $request->url_key;
+    $slug->slug_type = 0;
+    $slug->slugmodel_id = $page->id;
+    $slug->slugmodel_type = 'App\Models\ProductEntity';
+    $slug->save();
+
     return redirect('/admin/products');
   }
 

@@ -13,7 +13,36 @@
 
 </div>
 
+<div x-data="Setup()">
+     <button
+     @click.prevent="isNotificationsPanelOpen=true"
+     >BUTTON</button>
 
+     <section
+     x-ref="notificationsPanel"
+     x-show="isNotificationsPanelOpen"
+     @keydown.escape="isNotificationsPanelOpen=false">
+         NOTIFICATIONS PANEL
+     </section>
+ </div>
+
+ <script>
+ function Setup()
+ {
+     return {
+         loading: true,
+         isNotificationsPanelOpen: false,
+         openNotificationsPanel() {
+             this.isNotificationsPanelOpen = true;
+             console.log('openNotificationsPanel called');
+             console.log(this.isNotificationsPanelOpen);
+             this.$nextTick(() => {
+                 this.$refs.notificationsPanel.focus()
+             })
+         }
+     }
+ }
+ </script>
 
 
 

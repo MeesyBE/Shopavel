@@ -9,6 +9,7 @@ use App\Http\Controllers\MenuController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\SeoController;
 use App\Http\Controllers\FrontendController;
 
 /*
@@ -70,6 +71,8 @@ Route::get('/admin/users/profile', [UserController::class, 'profile'])->middlewa
 
 Route::get('/admin/settings', [SettingController::class, 'index'])->middleware('auth')->name('settings.index');
 Route::post('/admin/settings/save', [SettingController::class, 'save'])->middleware('auth')->name('settings.save');
+
+Route::get('/admin/seo/slugs', [SeoController::class, 'index'])->middleware('auth')->name('seo.slugs.index');
 
 
 

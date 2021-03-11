@@ -23,6 +23,8 @@ Shopavel is an open-source e-commerce platform written in PHP 8 and build on Lar
 ## Please let us know what you think! Or feel free to contribute! 
 The aim of shopavel is to become the most user-friendly webshop software without sacrificing functionality.
 
+![alt text](https://shopavel.com/wp-content/uploads/2021/03/gif.gif)
+
 ## Installation
 Start with cloning:
 
@@ -54,10 +56,11 @@ Try shopavel!
 
 - Advanced fronted slug router
 - Layout builder
+- Default theme
 - Multilingual content
 - Multi site
 - Plugins
-
+- Docs
 
 ## Discord
 Join the discord channel: https://discord.gg/Re4e2BYj

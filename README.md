@@ -60,7 +60,7 @@ Try shopavel!
 - Multilingual content
 - Multi site
 - Plugins
-
+- Docs
 
 ## Discord
 Join the discord channel: https://discord.gg/Re4e2BYj

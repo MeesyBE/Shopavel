@@ -41,7 +41,7 @@ class ProductController extends Controller
     $slug = new Slug;
     $slug->slug_request = $request->url_key;
     $slug->slug_type = 0;
-    $slug->slugmodel_id = $page->id;
+    $slug->slugmodel_id = $product->id;
     $slug->slugmodel_type = 'App\Models\ProductEntity';
     $slug->save();
 

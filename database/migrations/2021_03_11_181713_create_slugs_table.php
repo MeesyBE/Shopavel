@@ -15,6 +15,11 @@ class CreateSlugsTable extends Migration
     {
         Schema::create('slugs', function (Blueprint $table) {
             $table->id();
+            $table->string('slug_request');
+            $table->string('slug_target')->nullable();
+            $table->string('slug_type');
+            $table->integer('slugmodel_id');
+            $table->string('slugmodel_type');
             $table->timestamps();
         });
     }

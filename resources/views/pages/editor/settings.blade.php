@@ -44,7 +44,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="">URL key </label>
-                                <input name="url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $page->page_url_key }}" />
+                                <input name="url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $page->slug->slug_request ?? "" }}" />
                             </div>
                           </form>
                         </div>
@@ -55,7 +55,7 @@
                 <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded-md ml-4 inline-flex items-center" form="SavePage">
                     Save
                 </button>
-              
+
             </div>
         </div>
     </div>

@@ -34,7 +34,7 @@
             <tr>
                 <td class="px-6 py-2 "> {{ $category->id }} </td>
                 <td class="px-6 py-2 ">  {{ $category->category_name }} </td>
-                <td class="px-6 py-2 ">{{ $category->category_url_key }} </td>
+                <td class="px-6 py-2 ">{{ $category->slug->slug_request ?? "" }} </td>
                 <td class="px-6 py-2 ">{{ $category->category_status }}</td>
 
                 <td class="px-6 py-2 text-right">

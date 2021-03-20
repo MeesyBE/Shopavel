@@ -47,7 +47,7 @@
         </div>
         <div class="form-group mt-4">
             <label for="">URL key </label>
-            <input name="url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $product->product_url_key }}" />
+            <input name="product_url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $product->slug->slug_request ?? "" }}" />
         </div>
 
         @include('products.components.prices')

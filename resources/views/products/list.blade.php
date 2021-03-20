@@ -27,7 +27,7 @@
             <tr>
               <td class="px-6 py-2 ">{{ $product->id }}</td>
               <td class="px-6 py-2 ">{{ $product->product_name }}</td>
-              <td class="px-6 py-2 ">{{ $product->product_url_key }}</td>
+              <td class="px-6 py-2 ">{{ $product->slug->slug_request ?? "" }}</td>
               <td class="px-6 py-2 text-right">
                 <a href="{{ route('products.edit', $product->id) }}">
                   <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded" type="button" name="button">

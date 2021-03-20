@@ -15,7 +15,34 @@
     </div>
     <div x-show="openSeo" class="flex flex-row w-full justify-between mb-4">
         <div class="my-4 w-full">
+          <div class="table-wrapper p-4">
+              <table class="table-auto min-w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                      <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        In category
+                      </th>
+                      <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        #
+                      </th>
+                      <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Title
+                      </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($products as $product)
+                      <tr>
+                          <td class="px-6 py-2 "> <input type="radio" name="product.{{ $product->id }}" value="{{ $product->id }}"> </td>
+                          <td class="px-6 py-2 "> {{ $product->id }} </td>
+                          <td class="px-6 py-2 ">  {{ $product->product_name }} </td>
+                      </tr>
+                    @endforeach
 
+                  </tbody>
+
+              </table>
+          </div>
         </div>
     </div>
 

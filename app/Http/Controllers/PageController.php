@@ -24,7 +24,6 @@ class PageController extends Controller
       // dd($request);
       $page = new PageEntity;
       $page->page_name = $request->page_name;
-      $page->page_url_key = $request->url_key;
       $page->page_status = 0;
       $page->page_type = 0;
       $page->page_layout = 0;
@@ -54,13 +53,29 @@ class PageController extends Controller
       $page = PageEntity::find($id);
 
       $page->page_name = $request->page_name;
-      $page->page_url_key = $request->url_key;
       $page->page_status = 0;
       $page->page_type = 0;
       $page->page_layout = 0;
       $page->page_last_updated_by = Auth::id();
 
       $page->save();
+
+
+      if (isset($page->slug)) {
+        $slug = $page->slug;
+        $slug->slug_request = $request->page_url_key;
+        $slug->slug_type = 0;
+        $slug->save();
+      }else{
+        $slug = new Slug;
+        $slug->slug_request = $request->page_url_key;
+        $slug->slug_type = 0;
+        $slug->slugmodel_id = $page->id;
+        $slug->slugmodel_type = 'App\Models\PageEntity';
+        $slug->save();
+      }
+
+
       return redirect('/admin/pages');
     }
 }

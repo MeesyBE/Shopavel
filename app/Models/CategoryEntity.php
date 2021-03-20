@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class CategoryEntity extends Model
 {
     use HasFactory;
+
+
+    public function slug()
+    {
+        return $this->morphOne('App\Models\Slug', 'slugmodel');
+    }
 }

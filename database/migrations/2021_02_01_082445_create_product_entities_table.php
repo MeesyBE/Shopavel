@@ -16,13 +16,11 @@ class CreateProductEntitiesTable extends Migration
         Schema::create('product_entities', function (Blueprint $table) {
             $table->id();
             $table->string('product_name');
-            $table->string('product_url_key');
             $table->integer('product_status');
             $table->integer('product_type');
             $table->integer('product_layout');
             $table->integer('product_created_by');
             $table->integer('product_last_updated_by');
-
             $table->timestamps();
         });
     }

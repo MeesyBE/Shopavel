@@ -16,7 +16,6 @@ class CreatePageEntitiesTable extends Migration
         Schema::create('page_entities', function (Blueprint $table) {
             $table->id();
             $table->string('page_name');
-            $table->string('page_url_key');
             $table->integer('page_status');
             $table->integer('page_type');
             $table->integer('page_layout');

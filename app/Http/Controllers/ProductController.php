@@ -30,7 +30,6 @@ class ProductController extends Controller
     // dd($request);
     $product = new productEntity;
     $product->product_name = $request->product_name;
-    $product->product_url_key = $request->url_key;
     $product->product_status = 0;
     $product->product_type = 0;
     $product->product_layout = 0;
@@ -66,7 +65,6 @@ class ProductController extends Controller
     }
 
     $product->product_name = $request->product_name;
-    $product->product_url_key = $request->url_key;
     $product->product_type = 0;
     $product->product_layout = 0;
     $product->product_last_updated_by = Auth::id();
@@ -79,6 +77,22 @@ class ProductController extends Controller
     $product->price->product_price = $request->product_price;
     $product->price->product_discount_price = $request->product_discount_price;
     $product->price->save();
+
+
+    if (isset($product->slug)) {
+      $slug = $page->slug;
+      $slug->slug_request = $request->product_url_key;
+      $slug->slug_type = 0;
+      $slug->save();
+    }else{
+      $slug = new Slug;
+      $slug->slug_request = $request->product_url_key;
+      $slug->slug_type = 0;
+      $slug->slugmodel_id = $product->id;
+      $slug->slugmodel_type = 'App\Models\ProductEntity';
+      $slug->save();
+    }
+
 
     return back();
   }

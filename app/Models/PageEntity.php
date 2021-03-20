@@ -15,4 +15,9 @@ class PageEntity extends Model
    {
        return $this->hasOne(PageContent::class, 'page_id');
    }
+
+   public function slug()
+   {
+       return $this->morphOne('App\Models\Slug', 'slugmodel');
+   }
 }

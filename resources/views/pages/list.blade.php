@@ -34,7 +34,7 @@
             <tr>
                 <td class="px-6 py-2 "> {{ $page->id }} </td>
                 <td class="px-6 py-2 ">  {{ $page->page_name }} </td>
-                <td class="px-6 py-2 ">{{ $page->page_url_key }} </td>
+                <td class="px-6 py-2 ">{{ $page->slug->slug_request ?? "" }} </td>
                 <td class="px-6 py-2 ">{{ $page->page_status }}</td>
 
                 <td class="px-6 py-2 text-right">

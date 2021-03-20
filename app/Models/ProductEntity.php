@@ -20,4 +20,9 @@ class ProductEntity extends Model
     {
        return $this->hasMany(ProductAttribute::class, 'product_id');
     }
+
+    public function slug()
+    {
+        return $this->morphOne('App\Models\Slug', 'slugmodel');
+    }
 }

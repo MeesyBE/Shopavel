@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CategoryEntity;
+use App\Models\ProductEntity;
+use App\Models\PorductToCategory;
 use App\Models\Slug;
 use Auth;
 
 class CategoryController extends Controller
 {
   public function list(){
-    $categories = CategoryEntity::get();
+    $categories = CategoryEntity::with('slug')->get();
     return view('categories.list', ['categories' => $categories]);
   }
 
@@ -45,9 +47,10 @@ class CategoryController extends Controller
 
   public function edit($id){
     // dd($request);
-    $category = CategoryEntity::find($id);
+    $category = CategoryEntity::with('slug')->find($id);
+    $products = ProductEntity::get();
 
-    return view('categories.edit', ['category' => $category]);
+    return view('categories.edit', ['category' => $category, 'products' => $products]);
   }
 
   public function save(Request $request, $id){
@@ -61,12 +64,26 @@ class CategoryController extends Controller
     }
 
     $category->category_name = $request->category_name;
-    $category->category_url_key = $request->category_url_key;
     $category->category_type = 0;
     $category->category_layout = 0;
     $category->category_last_updated_by = Auth::id();
 
     $category->save();
+
+
+    if (isset($category->slug)) {
+      $slug = $category->slug;
+      $slug->slug_request = $request->category_url_key;
+      $slug->slug_type = 0;
+      $slug->save();
+    }else{
+      $slug = new Slug;
+      $slug->slug_request = $request->category_url_key;
+      $slug->slug_type = 0;
+      $slug->slugmodel_id = $category->id;
+      $slug->slugmodel_type = 'App\Models\CategoryEntity';
+      $slug->save();
+    }
 
 
     return back();

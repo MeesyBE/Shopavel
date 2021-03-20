@@ -42,8 +42,6 @@
             />
             <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
         </div>
-
-
         <div class="">
             <div class="form-group">
                 <label for="">category title </label>
@@ -51,7 +49,7 @@
             </div>
             <div class="form-group mt-4">
                 <label for="">URL key </label>
-                <input name="category_url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $category->category_url_key }}" />
+                <input name="category_url_key" class="border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-800" type="text" value="{{ $category->slug->slug_request ?? '' }}" />
             </div>
 
 

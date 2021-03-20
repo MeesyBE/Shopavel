@@ -17,7 +17,6 @@ class CreateCategoryEntitiesTable extends Migration
             $table->id();
             $table->string('category_name');
             $table->longText('category_description')->nullable();
-            $table->string('category_url_key')->nullable()->unique();
             $table->integer('category_status')->default(0);
             $table->integer('category_type')->default(0);
             $table->integer('category_layout')->default(0);

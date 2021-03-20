@@ -89,3 +89,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
 Route::get('/{urlkey}', [FrontendController::class, 'index'])->name('frontend.index');
+Route::get('/category/{urlkey}', [FrontendController::class, 'category'])->name('frontend.category');
+Route::get('/product/{urlkey}', [FrontendController::class, 'product'])->name('frontend.product');

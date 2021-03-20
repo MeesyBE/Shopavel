@@ -1,10 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "Meesy/Shopavel",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Shopavel is a free and open-source ecommerce platform.",
     "keywords": [
-        "framework",
-        "laravel"
+        "Shopavel",
+        "E-commerce"
     ],
     "license": "MIT",
     "require": {

@@ -21,9 +21,9 @@ class FrontendController extends Controller
         }])->first();
 
       $menu = Menu::with('menuItems')->first();
-      // if(!isset($page->page_name)){
-      //   abort(404);
-      // }
+      if(!isset($page->slugmodel)){
+        abort(404);
+      }
 
       return view('frontend.show', ['page' => $page->slugmodel, 'menu' => $menu]);
     }

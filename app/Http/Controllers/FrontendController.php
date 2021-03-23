@@ -28,14 +28,21 @@ class FrontendController extends Controller
       return view('frontend.show', ['page' => $page->slugmodel, 'menu' => $menu]);
     }
 
-    public function category($urlkey = ''){
+    public function category($urlkey = 'index'){
+      // $page = Slug::with('model')->where('slug_request', '=', $urlkey)->first();
 
-      $page = Slug::with('model')->where('slug_request', '=', $urlkey)->first();
+      $page = Slug::query()->where('slug_request', '=', $urlkey)
+        ->with(['model' => function (MorphTo $morphTo) {
+            $morphTo->morphWith([
+                PageEntity::class => ['content'],
+            ]);
+        }])->first();
+
       $menu = Menu::with('menuItems')->first();
-      if(!isset($page->page_name)){
+      if(!isset($page->slugmodel)){
         abort(404);
       }
 
-      return view('frontend.show', ['page' => $page->model, 'menu' => $menu]);
+      return view('frontend.show', ['page' => $page->slugmodel, 'menu' => $menu]);
     }
 }

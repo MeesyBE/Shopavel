@@ -1,8 +1,5 @@
-@extends('layouts.shopavel', ['title' => 'Slugs', 'subtitle' => ''])
+@extends('layouts.shopavel', ['title' => "Edit Slug: $slug->slug_request", 'subtitle' => ''])
 @section('content')
-    <div class="flex flex-row p-4">
-        <h1 class="content-title font-size-24">Edit Slug: {{ $slug->id }}</h1>
-      </div>
     <div class="flex min-w-full flex-row p-4">
       <form class="min-w-full" action="{{ route('seo.slugs.save', $slug->id) }}" method="POST" class="w-400 mw-full" id="saveslug"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
         {{ csrf_field() }}
@@ -23,7 +20,7 @@
       </form>
     </div>
       <div class="flex min-w-full flex-row p-4">
-        <a href="{{ route('pages.index')  }}">
+        <a href="{{ route('seo.slugs.list')  }}">
           <button class="bg-gray-700 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-4">Cancel</button>
 
         </a>

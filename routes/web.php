@@ -72,7 +72,7 @@ Route::get('/admin/users/profile', [UserController::class, 'profile'])->middlewa
 Route::get('/admin/settings', [SettingController::class, 'index'])->middleware('auth')->name('settings.index');
 Route::post('/admin/settings/save', [SettingController::class, 'save'])->middleware('auth')->name('settings.save');
 
-Route::get('/admin/seo/slugs', [SeoController::class, 'slugs'])->middleware('auth')->name('seo.slugs.index');
+Route::get('/admin/seo/slugs', [SeoController::class, 'slugs'])->middleware('auth')->name('seo.slugs.list');
 Route::get('/admin/seo/slug/{id}/edit', [SeoController::class, 'slugEdit'])->middleware('auth')->name('seo.slugs.edit');
 Route::post('/admin/seo/slug/{id}/save', [SeoController::class, 'slugSave'])->middleware('auth')->name('seo.slugs.save');
 

@@ -2,7 +2,7 @@
     <div class="shopavel-vertical-navigation-wrapper" >
         <div class="shopavel-vertical-navigation-header ">
           <div class="logo">
-            <img src="/admin/img/logo-white.png" style="width: 100%;">
+            <img src="/adminfiles/img/logo-white.png" style="width: 100%;">
           </div>
         </div>
         <div shopavelscrollbar="" class="shopavel-vertical-navigation-content">

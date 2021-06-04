@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class SeoController extends Controller
 {
-  public function index(){
+  public function slugs(){
     return view('seo.slugs.index');
   }
 }

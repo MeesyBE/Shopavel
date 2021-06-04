@@ -57,11 +57,10 @@ Try shopavel!
 ## To Do
 
 - Layout builder
-- Default theme
+- Extendable default theme
 - Multilingual content
 - Multi site
-- Plugins
-- Docs
+- External plugins
 
 ## Discord
 Join the discord channel: https://discord.gg/Re4e2BYj

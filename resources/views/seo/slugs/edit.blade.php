@@ -11,7 +11,7 @@
 
         <div class="form-group">
           <label for="full-name" class="required">Slug model</label>
-          <input type="text" class="bg-gray-500 focus:bg-white border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight cursor-not-allowed" id="slugmodel_type" name="slugmodel_type" value="{{ $slug->slugmodel_type }}" disabled="true">
+          <input type="text" class="bg-gray-500 focus:bg-white border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight cursor-not-allowed" id="slugmodel_type" name="slugmodel_type" value="{{ str_replace("App\Models\\", "", $slug->slugmodel_type) }}" disabled="true">
         </div>
         <div class="form-group">
           <label for="full-name" class="required">Slug model id</label>

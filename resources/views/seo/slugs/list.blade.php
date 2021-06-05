@@ -25,8 +25,8 @@
               @foreach ($slugs as $slug)
                 <tr>
                     <td class="px-6 py-2 "> {{ $slug->id }} </td>
-                    <td class="px-6 py-2 ">  {{ $slug->slug_request }} </td>
-                    <td class="px-6 py-2 ">{{ $slug->slugmodel_type ?? "" }} </td>
+                    <td class="px-6 py-2 ">  {{  $slug->slug_request }} </td>
+                    <td class="px-6 py-2 ">{{ str_replace("App\Models\\", "", $slug->slugmodel_type) ?? "" }} </td>
                     <td class="px-6 py-2 ">{{ $slug->slugmodel_id ?? "" }} </td>
                     <td class="px-6 py-2 text-right">
                       <a href="{{ route('seo.slugs.edit', $slug->id) }}">

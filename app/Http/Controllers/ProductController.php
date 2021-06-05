@@ -80,7 +80,7 @@ class ProductController extends Controller
 
 
     if (isset($product->slug)) {
-      $slug = $page->slug;
+      $slug = $product->slug;
       $slug->slug_request = $request->product_url_key;
       $slug->slug_type = 0;
       $slug->save();

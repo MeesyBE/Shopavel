@@ -76,6 +76,6 @@ class PageController extends Controller
       }
 
 
-      return redirect('/admin/pages');
+      return back();
     }
 }

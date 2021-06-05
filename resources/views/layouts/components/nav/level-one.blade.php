@@ -4,13 +4,6 @@
         <p class="text-xs font-semibold">MENU</p>
     </div>
 
-    <div class="mx-4"  @click="ContentTab = !ContentTab" @click.away="ContentTab = false">
-        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*plugins*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}">
-            <span class="material-icons shopavel-vertical-navigation-item-icon">manage_search</span>
-            <div class="ml-4 font-semibold">Content</div>
-        </a>
-    </div>
-
     <div class="mx-4">
         <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*dashboard*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="/admin/dashboard">
             <span class="material-icons shopavel-vertical-navigation-item-icon">dashboard</span>
@@ -19,6 +12,13 @@
     </div>
 
 
+    <div class="mx-4"  @click="ContentTab = !ContentTab" @click.away="ContentTab = false">
+        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*content*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}">
+            <span class="material-icons shopavel-vertical-navigation-item-icon">edit</span>
+            <div class="ml-4 font-semibold">Content</div>
+        </a>
+    </div>
+
     <div class="mx-4">
         <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*products*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('products.index') }}">
             <span class="material-icons shopavel-vertical-navigation-item-icon">shopping_cart</span>
@@ -26,30 +26,19 @@
         </a>
     </div>
 
-
-    <div class="mx-4">
-        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*menus*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('menus.index') }}">
-            <span class="material-icons shopavel-vertical-navigation-item-icon">account_tree</span>
-            <div class="ml-4 font-semibold">Menus</div>
-        </a>
-    </div>
-
-
-    <div class="mx-4">
-        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*layout*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('layout.index') }}">
-            <span class="material-icons shopavel-vertical-navigation-item-icon">design_services</span>
-            <div class="ml-4 font-semibold">Layout</div>
-        </a>
-    </div>
-
-
     <div class="mx-4"  @click="SeoTab = !SeoTab" @click.away="SeoTab = false">
-        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*plugins*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}">
+        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*seo*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}">
             <span class="material-icons shopavel-vertical-navigation-item-icon">manage_search</span>
             <div class="ml-4 font-semibold">SEO</div>
         </a>
     </div>
 
+    <div class="mx-4"  @click="LayoutTab = !LayoutTab" @click.away="LayoutTab = false">
+        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*layout*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}">
+            <span class="material-icons shopavel-vertical-navigation-item-icon">design_services</span>
+            <div class="ml-4 font-semibold">Layout</div>
+        </a>
+    </div>
 
     <div class="mx-4">
         <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*plugins*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('plugins.index') }}">

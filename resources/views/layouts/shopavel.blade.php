@@ -19,7 +19,7 @@
 
 
 
-<body class="shopavel-splash-screen-hidden shopavel-theme" x-data="{ userInterface: false, SeoTab: false, sideBar: true}">
+<body class="shopavel-splash-screen-hidden shopavel-theme" x-data="{ userInterface: false, SeoTab: false, sideBar: true, ContentTab: false}">
     <div class="layout">
         @include('layouts.components.sidebar')
         <div class="wrapper">

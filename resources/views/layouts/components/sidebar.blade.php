@@ -28,6 +28,7 @@
     </div>
     @include('layouts.components.nav.settings')
     @include('layouts.components.nav.seo')
+    @include('layouts.components.nav.content')
 
 
 </div>

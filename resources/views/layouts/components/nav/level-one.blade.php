@@ -19,10 +19,10 @@
         </a>
     </div>
 
-    <div class="mx-4">
-        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*products*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}" href="{{ route('products.index') }}">
+    <div class="mx-4" @click="SalesTab = !SalesTab" @click.away="SalesTab = false">
+        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item {{ Request::is('*products*') ? 'bg-indigo-900 color-white' : 'text-indigo-300' }}">
             <span class="material-icons shopavel-vertical-navigation-item-icon">shopping_cart</span>
-            <div class="ml-4 font-semibold">Products</div>
+            <div class="ml-4 font-semibold">Sales</div>
         </a>
     </div>
 

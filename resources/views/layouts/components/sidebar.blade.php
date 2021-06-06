@@ -30,6 +30,7 @@
     @include('layouts.components.nav.seo')
     @include('layouts.components.nav.content')
     @include('layouts.components.nav.layout')
+    @include('layouts.components.nav.sales')
 
 
 </div>

@@ -9,7 +9,7 @@ class CartController extends Controller
 {
     //
     public function list(){
-      $carts = CartEntity::where('page_status', '!=', '-1')->get();
-      return view('carts.list', ['carts' => $carts]);
+      $carts = CartEntity::get();
+      return view('carts.list', compact('carts'));
     }
 }

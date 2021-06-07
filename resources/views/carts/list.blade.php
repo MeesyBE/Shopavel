@@ -1,9 +1,5 @@
 @extends('layouts.shopavel', [
-  'title' => 'Pages',
-  'subtitle' => 'Edit pages',
-  'buttontekst' => 'New Page',
-  'buttonlink' => route('pages.new'),
-  'buttonicon' => 'add',
+  'title' => 'Carts',
   'view' => 'default',
 ])
 @section('content')

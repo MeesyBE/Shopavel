@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\OrderEntity;
 
-class OderController extends Controller
+class OrderController extends Controller
 {
     //
+    public function list(){
+      $orders = OrderEntity::get();
+      return view('orders.list', compact('orders'));
+    }
 }

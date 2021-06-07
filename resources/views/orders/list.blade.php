@@ -1,8 +1,8 @@
 @extends('layouts.shopavel', [
-  'title' => 'Pages',
-  'subtitle' => 'Edit pages',
-  'buttontekst' => 'New Page',
-  'buttonlink' => route('pages.new'),
+  'title' => 'Orders',
+  'subtitle' => 'Edit Orders',
+  'buttontekst' => 'New Order',
+  'buttonlink' => route('orders.list'),
   'buttonicon' => 'add',
   'view' => 'default',
 ])

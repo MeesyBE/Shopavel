@@ -11,6 +11,8 @@ use App\Http\Controllers\LayoutController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\SeoController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,6 +56,11 @@ Route::get('/admin/categories/new', [CategoryController::class, 'new'])->middlew
 Route::post('/admin/categories/create', [CategoryController::class, 'create'])->middleware('auth')->name('categories.create');
 Route::get('/admin/categories/edit/{id}', [CategoryController::class, 'edit'])->middleware('auth')->name('categories.edit');
 Route::post('/admin/categories/save/{id}', [CategoryController::class, 'save'])->middleware('auth')->name('categories.save');
+
+Route::get('/admin/carts', [CartController::class, 'list'])->middleware('auth')->name('carts.list');
+
+Route::get('/admin/orders', [OrderController::class, 'list'])->middleware('auth')->name('orders.list');
+
 
 Route::get('/admin/menus', [MenuController::class, 'list'])->middleware('auth')->name('menus.index');
 Route::get('/admin/menus/new', [MenuController::class, 'new'])->middleware('auth')->name('menus.new');

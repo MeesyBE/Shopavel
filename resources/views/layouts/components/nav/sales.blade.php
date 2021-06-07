@@ -14,7 +14,7 @@
 
 
     <div class="mx-4">
-        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item " href="{{ route('settings.index') }}">
+        <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item " href="{{ route('orders.list') }}">
           <span class="material-icons shopavel-vertical-navigation-item-icon">receipt</span>
           <div class="ml-4 font-semibold">Orders</div>
         </a>
@@ -22,7 +22,7 @@
 
 
       <div class="mx-4">
-          <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item " href="{{ route('settings.index') }}">
+          <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item " href="{{ route('carts.list') }}">
             <span class="material-icons shopavel-vertical-navigation-item-icon">shopping_bag</span>
             <div class="ml-4 font-semibold">Carts</div>
           </a>

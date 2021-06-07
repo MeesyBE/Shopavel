@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CartEntityController extends Controller
+class OderController extends Controller
 {
     //
 }

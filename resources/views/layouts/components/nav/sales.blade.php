@@ -15,10 +15,19 @@
 
     <div class="mx-4">
         <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item " href="{{ route('settings.index') }}">
-          <span class="material-icons shopavel-vertical-navigation-item-icon">miscellaneous_services</span>
+          <span class="material-icons shopavel-vertical-navigation-item-icon">receipt</span>
           <div class="ml-4 font-semibold">Orders</div>
         </a>
     </div>
+
+
+      <div class="mx-4">
+          <a class="flex px-4 py-3 my-1 hover:bg-indigo-700 hover:text-white rounded-lg shopavel-vertical-navigation-item " href="{{ route('settings.index') }}">
+            <span class="material-icons shopavel-vertical-navigation-item-icon">shopping_bag</span>
+            <div class="ml-4 font-semibold">Carts</div>
+          </a>
+      </div>
+
 
 
   </div>

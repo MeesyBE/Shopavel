@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\PageEntity;
+use App\Models\CategoryEntity;
 use App\Models\Slug;
 use App\Models\Menu;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -34,7 +35,7 @@ class FrontendController extends Controller
       $page = Slug::query()->where('slug_request', '=', $urlkey)
         ->with(['model' => function (MorphTo $morphTo) {
             $morphTo->morphWith([
-                PageEntity::class => ['content'],
+                CategoryEntity::class => [],
             ]);
         }])->first();
 

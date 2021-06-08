@@ -52,8 +52,8 @@
 
         @include('products.components.prices')
 
-        @include('products.components.images')
-
+        {{-- @include('products.components.images') --}}
+        @livewire('product-image-upload', ['productId' => $product->id])
 
         @livewire('product-attributes')
 

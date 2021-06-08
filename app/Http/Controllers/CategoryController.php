@@ -26,7 +26,6 @@ class CategoryController extends Controller
     $category = new CategoryEntity;
 
     $category->category_name = $request->category_name;
-    $category->category_url_key = $request->category_url_key;
     $category->category_status = 0;
     $category->category_type = 0;
     $category->category_layout = 0;

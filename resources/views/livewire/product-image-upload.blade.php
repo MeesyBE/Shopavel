@@ -7,7 +7,7 @@
                   <div class="my-4">
                       <p class="text-2xl font-bold">Images</p>
                       @foreach($images as $image)
-                        <img src="/storage/{{ $image->image_path }}" />
+                        <img src="/storage/{{ $image->image_path }}" style="height: 100px; width: auto;"/>
                       @endforeach
                   </div>
                   <div class="my-4">

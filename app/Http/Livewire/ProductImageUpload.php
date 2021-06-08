@@ -33,7 +33,7 @@ class ProductImageUpload extends Component
       $image->image_path = $image_path;
       $image->image_type = substr($image_path, -3);
       $image->image_order = 0;
-      $image->belongs_to_model = "App\Models\ProductEntity";
+      $image->belongs_to_type = "App\Models\ProductEntity";
       $image->belongs_to_id = $this->productId;
 
       $image->save();

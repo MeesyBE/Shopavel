@@ -18,7 +18,7 @@ class CreateImagesTable extends Migration
             $table->string('image_path');
             $table->string('image_type');
             $table->integer('image_order');
-            $table->string('belongs_to_model');
+            $table->string('belongs_to_type');
             $table->string('belongs_to_id');
             $table->timestamps();
         });

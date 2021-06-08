@@ -49,7 +49,7 @@ class ProductController extends Controller
 
   public function edit($id){
     // dd($request);
-    $product = ProductEntity::with('price')->find($id);
+    $product = ProductEntity::with('price', 'images')->find($id);
 
     return view('products.edit', ['product' => $product]);
   }

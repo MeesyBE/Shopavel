@@ -53,7 +53,7 @@
         @include('products.components.prices')
 
         {{-- @include('products.components.images') --}}
-        @livewire('product-image-upload', ['productId' => $product->id])
+        @livewire('product-image-upload', ['productId' => $product->id, 'images' => $product->images])
 
         @livewire('product-attributes')
 
@@ -62,6 +62,11 @@
 
 
     </div>
+    <pre>
+      @php
+        var_dump($product->images->toArray());
+      @endphp
+    </pre>
 </form>
 
 

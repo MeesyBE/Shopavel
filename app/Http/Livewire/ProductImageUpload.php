@@ -12,6 +12,7 @@ class ProductImageUpload extends Component
 
     public $addImage = false;
     public $image;
+    public $images;
     public $productId;
 
     public function addImage()
@@ -37,7 +38,6 @@ class ProductImageUpload extends Component
 
       $image->save();
 
-      dd($image);
     }
 
     public function render()

@@ -6,7 +6,9 @@
               <div class="flex flex-row w-full justify-between">
                   <div class="my-4">
                       <p class="text-2xl font-bold">Images</p>
-
+                      @foreach($images as $image)
+                        <img src="/storage/{{ $image->image_path }}" />
+                      @endforeach
                   </div>
                   <div class="my-4">
                       <div class="">

@@ -23,7 +23,8 @@ class MenuItems extends Component
     public function mount($id)
     {
       $this->menuId = $id;
-      $this->menuName = Menu::find($id)->menu_name;
+
+      $this->menuName = Menu::find($id)->first()->menu_name;
       $this->menuItems = Menuitem::where([['menu_id', '=', $id], ['menu_item_parent_id', '=', '0']])->get();
       $this->menuItemsAll = Menuitem::where('menu_id', '=', $id)->get();
       $this->menuItemsSave = Menuitem::where('menu_id', '=', $id)->get()->keyBy('id')->toArray();

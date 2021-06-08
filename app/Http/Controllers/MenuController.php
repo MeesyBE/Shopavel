@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Menu;
+use App\Models\Slug;
 use Auth;
 
 class MenuController extends Controller
@@ -33,7 +34,8 @@ class MenuController extends Controller
   }
 
   public function edit($id){
-    return view('menus.edit', ['id' => $id]);
+    $slugs = Slug::get();
+    return view('menus.edit', ['id' => $id, 'slugs' => $slugs]);
   }
 
   public function save(Request $request, $id){

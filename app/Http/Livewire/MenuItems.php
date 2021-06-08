@@ -63,6 +63,14 @@ class MenuItems extends Component
       $this->newMenuItemHref = "/";
     }
 
+    public function deleteMenuItem($id)
+    {
+      $menuItem = MenuItem::destroy($id);
+      $this->menuItemsAll = Menuitem::where('menu_id', '=', $id)->get();
+      $this->menuItemsSave = Menuitem::where('menu_id', '=', $id)->get()->keyBy('id')->toArray();
+      $this->menuItemsLayout = $this->menuAddChildren($this->menuItems);
+    }
+
     public function menuUpdate()
     {
       // dd($this->menuItemsSave);

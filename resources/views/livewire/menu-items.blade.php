@@ -18,7 +18,7 @@
 
     </div>
 
-    <form class="flex w-full" id="SaveMenu" action="{{ route('menus.save', $menuId) }}" method="post">
+    <form class="flex w-full" id="SaveMenu" action="{{ route('menus.save', $menuId) }}" wire:submit.prevent method="post">
         {{ csrf_field() }}
         <div class="p-4 w-full">
 

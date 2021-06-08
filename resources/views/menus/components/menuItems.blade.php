@@ -11,6 +11,7 @@
       </div>
       <div class="flex w-1/6 m-4">
         <button class="border rounded px-4 py-2" x-on:click.prevent="openItem{{$menuItem['id']}} = !openItem{{$menuItem['id']}}">Edit</button>
+        <button class="border rounded px-4 py-2" wire:click="deleteMenuItem({{ $menuItem['id'] }})">Delete</button>
       </div>
     </div>
     <div x-show="openItem{{ $menuItem['id'] }}" class="flex flex-row w-full">

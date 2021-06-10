@@ -1,4 +1,8 @@
-@extends('layouts.shopavel', ['title' => 'Users', 'subtitle' => 'Edit users'])
+@extends('layouts.shopavel', ['title' => 'Users',
+                              'subtitle' => 'Edit users',
+                              'buttontekst' => 'New User',
+                              'buttonlink' => route('users.new'),
+                              'buttonicon' => 'add'])
 @section('content')
   <div class="flex flex-col p-4">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

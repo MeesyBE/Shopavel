@@ -59,10 +59,10 @@
     </div>
 </form>
 
-{{-- <pre>
+<pre>
       @php
-        print_r($categories);
+        // print_r($prodIds);
       @endphp
-    </pre> --}}
+    </pre>
 
 @stop

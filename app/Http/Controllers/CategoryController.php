@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\CategoryEntity;
 use App\Models\ProductEntity;
-use App\Models\PorductToCategory;
+use App\Models\ProductToCategory;
 use App\Models\Slug;
 use Auth;
 
@@ -46,14 +46,20 @@ class CategoryController extends Controller
 
   public function edit($id){
     // dd($request);
-    $category = CategoryEntity::with('slug')->find($id);
+    $category = CategoryEntity::with('slug', 'products')->find($id);
     $products = ProductEntity::get();
+    $prodIds = [];
+    if(!empty($category->products)){
+      foreach($category->products as $product){
+        $prodIds[] = $product->id;
+      }
+    }
 
-    return view('categories.edit', ['category' => $category, 'products' => $products]);
+    return view('categories.edit', ['category' => $category, 'products' => $products, 'prodIds' => $prodIds]);
   }
 
   public function save(Request $request, $id){
-    // dd($request);
+    // dd($request->toArray());
     $category = CategoryEntity::find($id);
 
     if ($request->category_enable == "on") {
@@ -68,6 +74,24 @@ class CategoryController extends Controller
     $category->category_last_updated_by = Auth::id();
 
     $category->save();
+
+    if(!empty($request->products)){
+      foreach($request->products as $product){
+        $prodcat = ProductToCategory::where([['product_id', '=', $product], ['category_id', '=', $id]])->first();
+        if(isset($prodcat->id)){
+          // dd($prodcat->toArray());
+        }else{
+          $prodcat = new ProductToCategory;
+
+          $prodcat->product_id = $product;
+          $prodcat->category_id = $id;
+          $prodcat->order = 0;
+
+          $prodcat->save();
+
+        }
+      }
+    }
 
 
     if (isset($category->slug)) {

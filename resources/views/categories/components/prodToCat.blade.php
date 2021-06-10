@@ -33,7 +33,7 @@
                 <tbody>
                     @foreach ($products as $product)
                       <tr>
-                          <td class="px-6 py-2 "> <input type="radio" name="product.{{ $product->id }}" value="{{ $product->id }}"> </td>
+                          <td class="px-6 py-2 "> <input type="radio" name="products[{{ $product->id }}]" value="{{ $product->id }}" @if(in_array($product->id, $prodIds)) checked="true" @endif> </td>
                           <td class="px-6 py-2 "> {{ $product->id }} </td>
                           <td class="px-6 py-2 ">  {{ $product->product_name }} </td>
                       </tr>

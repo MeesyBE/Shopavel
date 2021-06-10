@@ -12,6 +12,10 @@ class UserController extends Controller
     return view('users.list', ['users' => $users]);
   }
 
+  public function new(){
+    return view('users.new');
+  }
+
   public function profile(){
 
     return view('profile.show');

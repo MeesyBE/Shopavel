@@ -74,7 +74,7 @@ Route::get('/admin/layout', [LayoutController::class, 'index'])->middleware('aut
 Route::get('/admin/plugins', [PluginController::class, 'list'])->middleware('auth')->name('plugins.index');
 
 Route::get('/admin/users', [UserController::class, 'list'])->middleware('auth')->name('users.index');
-Route::get('/admin/users/new', [UserController::class, 'list'])->middleware('auth')->name('users.new');
+Route::get('/admin/users/new', [UserController::class, 'new'])->middleware('auth')->name('users.new');
 Route::get('/admin/users/profile', [UserController::class, 'profile'])->middleware('auth')->name('users.profile');
 
 Route::get('/admin/settings', [SettingController::class, 'index'])->middleware('auth')->name('settings.index');

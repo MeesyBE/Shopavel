@@ -25,7 +25,7 @@ To get started with Shopavel you can read our [wiki](https://github.com/MeesyBE/
 ## Please let us know what you think! Or feel free to contribute! 
 The aim of shopavel is to become the most user-friendly webshop software without sacrificing functionality.
 
-![alt text](https://shopavel.com/wp-content/uploads/2021/03/gif.gif)
+
 
 ## Installation
 Start with cloning:

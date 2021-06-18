@@ -24,7 +24,7 @@ To get started with Shopavel you can read our [wiki](https://github.com/MeesyBE/
 
 
 ## Please let us know what you think! Or feel free to contribute! 
-The aim of shopavel is to become the most user-friendly webshop software without sacrificing functionality.
+The aim of shopavel is to become user-friendly webshop software without sacrificing functionality.
 
 If you try shopavel, give us some [feedback](https://github.com/MeesyBE/Shopavel/discussions/7).
 

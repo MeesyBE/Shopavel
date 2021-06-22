@@ -18,13 +18,14 @@
 ![alt text](https://shopavel.com/wp-content/uploads/2021/02/Schermafbeelding-2021-02-18-om-08.56.01.png)
 
 # Shopavel
-Shopavel is an open-source e-commerce platform written in PHP 8 and build on Laravel 8 and Livewire
+Shopavel is an open-source e-commerce platform written in PHP 8 and build on Laravel 8 and Livewire. 
+
 
 To get started with Shopavel you can read our [wiki](https://github.com/MeesyBE/Shopavel/wiki).
 
 
 ## Please let us know what you think! Or feel free to contribute! 
-The aim of shopavel is to become user-friendly webshop software without sacrificing functionality.
+The aim of shopavel is to become the most user-friendly webshop software without sacrificing functionality.
 
 If you try shopavel, give us some [feedback](https://github.com/MeesyBE/Shopavel/discussions/7).
 

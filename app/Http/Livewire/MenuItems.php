@@ -49,12 +49,12 @@ class MenuItems extends Component
       $menuItem = new MenuItem;
 
       $menuItem->menu_item_name = $this->newMenuItemName;
-      $menuItem->menu_id = $this->menuId;
+      $menuItem->menu_id = $this->menuId['id'];
       $menuItem->menu_item_parent_id = $this->newMenuItemParent ?? 0;
       $menuItem->menu_item_href = $this->newMenuItemHref;
       $menuItem->menu_item_created_by = Auth::id();
       $menuItem->menu_item_last_updated_by = Auth::id();
-
+      // dd($menuItem);
       $menuItem->save();
       $this->menuItems = Menuitem::where([['menu_id', '=', $this->menuId], ['menu_item_parent_id', '=', '0']])->get();
       $this->menuItemsAll = Menuitem::where('menu_id', '=', $this->menuId)->get();

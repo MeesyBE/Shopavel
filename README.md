@@ -63,7 +63,7 @@ Try shopavel!
 - Extendable default theme
 - Multilingual content
 - Multi site
-- External plugins
+- Plugin Marketplace
 - Crypto payments
 - Extended SEO Tools
 

@@ -65,7 +65,7 @@ Try shopavel!
 - Multi site
 - External plugins
 - Crypto payments
-- SEO Tools
+- Extended SEO Tools
 
 ## Discord
 Join the discord channel: https://discord.gg/Re4e2BYj

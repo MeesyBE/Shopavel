@@ -59,7 +59,7 @@ Try shopavel!
 
 ## To Do
 
-- Layout builder
+- Theme builder
 - Extendable default theme
 - Multilingual content
 - Multi site

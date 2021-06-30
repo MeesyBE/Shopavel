@@ -11,6 +11,12 @@
   </style>
   {!! $page->content->page_content ?? '' !!}
 
+  @if(isset($products))
+    @include('frontend.category')
+  @endif
+  @if(isset($product))
+    @include('frontend.product')
+  @endif
   {{-- <pre>
     @php
       print_r($page);

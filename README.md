@@ -68,4 +68,4 @@ Try shopavel!
 - Extended SEO Tools
 
 ## Discord
-Join the discord channel: https://discord.gg/Re4e2BYj
+Join the discord channel: https://discord.gg/46k6GPEMCU

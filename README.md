@@ -70,6 +70,7 @@ Try shopavel!
 
 ## Discord
 Join the discord channel: https://discord.gg/46k6GPEMCU
+
 <a herf="https://discord.com/invite/46k6GPEMCU" >
 <img src="https://bit.ly/3vPJxRN" alt="discord" width="50px" style="cursor:pointer;"/>
 </a>

@@ -67,7 +67,6 @@ Try shopavel!
 - Crypto payments
 - Extended SEO Tools
 
-
 ## Discord
 Join the discord channel: https://discord.gg/46k6GPEMCU
 

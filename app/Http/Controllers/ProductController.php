@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ProductEntity;
-use App\Models\ProductPrice;
-use App\Models\ProductAttribute;
+use App\Models\Products\ProductEntity;
+use App\Models\Products\ProductPrice;
+use App\Models\Products\ProductAttribute;
 use App\Models\Slug;
 use Auth;
 

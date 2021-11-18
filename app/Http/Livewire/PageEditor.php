@@ -3,8 +3,8 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\PageEntity;
-use App\Models\PageContent;
+use App\Models\Pages\PageEntity;
+use App\Models\Pages\PageContent;
 
 class PageEditor extends Component
 {

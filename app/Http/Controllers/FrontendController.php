@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\PageEntity;
+use App\Models\Pages\PageEntity;
 use App\Models\Categories\CategoryEntity;
 use App\Models\Products\ProductEntity;
 use App\Models\Slug;

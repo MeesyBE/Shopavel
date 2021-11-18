@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Menuitem;
-use App\Models\Menu;
+use App\Models\Menus\Menu;
 use Auth;
 
 class MenuItems extends Component

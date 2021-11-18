@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\PageEntity;
-use App\Models\CategoryEntity;
+use App\Models\Categories\CategoryEntity;
 use App\Models\Products\ProductEntity;
 use App\Models\Slug;
-use App\Models\Menu;
+use App\Models\Menus\Menu;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class FrontendController extends Controller

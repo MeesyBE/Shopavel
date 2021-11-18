@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\ProductToCategory;
-use App\Models\ProductEntity;
+use App\Models\Products\ProductToCategory;
+use App\Models\Products\ProductEntity;
 
 class CategoryEntity extends Model
 {

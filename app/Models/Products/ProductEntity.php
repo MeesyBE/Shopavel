@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\ProductPrice;
+use App\Models\Products\ProductPrice;
 use App\Models\Image;
-use App\Models\ProductAttribute;
+use App\Models\Products\ProductAttribute;
 
 class ProductEntity extends Model
 {

@@ -3,9 +3,9 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\ProductAttribute;
-use App\Models\ProductAttributeValue;
-use App\Models\ProductToAttribute;
+use App\Models\Products\ProductAttribute;
+use App\Models\Products\ProductAttributeValue;
+use App\Models\Products\ProductToAttribute;
 
 class ProductAttributes extends Component
 {

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\PageEntity;
 use App\Models\CategoryEntity;
-use App\Models\ProductEntity;
+use App\Models\Products\ProductEntity;
 use App\Models\Slug;
 use App\Models\Menu;
 use Illuminate\Database\Eloquent\Relations\MorphTo;

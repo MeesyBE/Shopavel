@@ -12,6 +12,8 @@ class PageEditor extends Component
     // public $page;
     public $pageContentHtmlTemp = '';
     public $pageContentStyleTemp = '';
+    public $showPageSettings = false;
+    public $page = [];
 
     protected $listeners = [
         'set:pageContentHtmlTemp' => 'pageContentHtmlTemp',
@@ -23,6 +25,7 @@ class PageEditor extends Component
        // $this->page = PageEntity::find($id);
        // $this->page = PageEntity::with('content')->find($id);
        $this->pageid = $id;
+       $this->page = $page;
     }
 
     public function pageContentHtmlTemp($pageContentHtmlTemp){
@@ -51,8 +54,15 @@ class PageEditor extends Component
       }
     }
 
+    public function pageSettings()
+    {
+      $this->showPageSettings = true;
+    }
+
     public function render()
     {
         return view('livewire.page-editor');
     }
+
+    
 }

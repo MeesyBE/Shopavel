@@ -18,6 +18,7 @@ class CreatePageContentsTable extends Migration
             $table->integer('page_id');
             $table->longText('page_content');
             $table->longText('page_style');
+            $table->longText('page_script');
             $table->timestamps();
         });
     }

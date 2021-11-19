@@ -12,6 +12,18 @@
       @livewire('pages.editor', ['page' => $page, 'id' => $page->id])
       <div id="editor" class="h-full" style="height:auto">
       </div>
+      <div class="panel__top">
+          <div class="panel__basic-actions"></div>
+      </div>
+      <div class="editor-row">
+        <div class="editor-canvas">
+          <div id="gjs">...</div>
+        </div>
+        <div class="panel__right">
+          <div class="layers-container"></div>
+        </div>
+      </div>
+      <div id="blocks"></div>
 @stop
 
 @php
@@ -24,7 +36,7 @@
 
   var editor = grapesjs.init({
     container : '#editor',
-    plugins: ["gjs-blocks-basic"],
+    plugins: ["gjs-blocks-basic", "gjs-preset-webpage"],
     pluginsOpts: {
       "gjs-blocks-basic": {
       }

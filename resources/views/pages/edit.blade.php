@@ -9,7 +9,7 @@
 @section('content')
 
 
-      @livewire('page-editor', ['page' => $page, 'id' => $page->id])
+      @livewire('pages.editor', ['page' => $page, 'id' => $page->id])
       <div id="editor" class="h-full" style="height:auto">
       </div>
 @stop

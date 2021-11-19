@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Pages;
 
 use Livewire\Component;
 use App\Models\Pages\PageEntity;
 use App\Models\Pages\PageContent;
 
-class PageEditor extends Component
+class Editor extends Component
 {
     public $pageid;
     // public $page;
@@ -61,8 +61,8 @@ class PageEditor extends Component
 
     public function render()
     {
-        return view('livewire.page-editor');
+        return view('livewire.pages.editor');
     }
 
-    
+
 }

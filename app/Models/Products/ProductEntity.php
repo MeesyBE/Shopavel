@@ -5,8 +5,8 @@ namespace App\Models\Products;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Products\ProductPrice;
-use App\Models\Image;
 use App\Models\Products\ProductAttribute;
+use App\Models\Image;
 
 class ProductEntity extends Model
 {

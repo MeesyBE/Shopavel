@@ -4,7 +4,7 @@ namespace App\Models\Pages;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\PageContent;
+use App\Models\Pages\PageContent;
 
 class PageEntity extends Model
 {

@@ -35,7 +35,7 @@ class PageController extends Controller
       $slug->slug_request = $request->url_key;
       $slug->slug_type = 0;
       $slug->slugmodel_id = $page->id;
-      $slug->slugmodel_type = 'App\Models\PageEntity';
+      $slug->slugmodel_type = 'App\Models\Pages\PageEntity';
       $slug->save();
 
       return redirect('/admin/pages');
@@ -71,7 +71,7 @@ class PageController extends Controller
         $slug->slug_request = $request->page_url_key;
         $slug->slug_type = 0;
         $slug->slugmodel_id = $page->id;
-        $slug->slugmodel_type = 'App\Models\PageEntity';
+        $slug->slugmodel_type = 'App\Models\Pages\PageEntity';
         $slug->save();
       }
 

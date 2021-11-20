@@ -40,26 +40,17 @@ class Editor extends Component
     {
       if (!empty($this->pageContentHtmlTemp) && !empty($this->pageContentStyleTemp)) {
         $pageContent = PageContent::where('page_id', '=', $this->pageid)->first();
-        if(isset($pageContent->page_id)){
-
-
-          $pageContent->page_content = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', "", $this->pageContentHtmlTemp);
-          preg_match_all('/\<script(.*?)?\>(.|\s)*?\<\/script\>/i', $this->pageContentHtmlTemp, $scripts);
-          $pageContent->page_script = $scripts;
-
-          $pageContent->page_style =  $this->pageContentStyleTemp;
-          $pageContent->save();
-        }else{
+        if(!isset($pageContent->page_id)){
           $pageContent = new PageContent;
           $pageContent->page_id = $this->pageid;
-
-          $pageContent->page_content = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', "", $this->pageContentHtmlTemp);
-          preg_match_all('/\<script(.*?)?\>(.|\s)*?\<\/script\>/i', $this->pageContentHtmlTemp, $scripts);
-          $pageContent->page_script = $scripts;
-
-          $pageContent->page_style = $this->pageContentStyleTemp;
-          $pageContent->save();
         }
+
+        $pageContent->page_content = preg_replace('/<script\b[^>]*>(.*?)<\/script>/is', "", $this->pageContentHtmlTemp);
+        preg_match_all('/\<script(.*?)?\>(.|\s)*?\<\/script\>/i', $this->pageContentHtmlTemp, $scripts);
+        $pageContent->page_script = json_encode($scripts ?? "");
+
+        $pageContent->page_style = $this->pageContentStyleTemp;
+        $pageContent->save();
       }
     }
 

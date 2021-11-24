@@ -17,7 +17,9 @@
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
-        "nwidart/laravel-modules": "^8.2"
+        "nunomaduro/laravel-console-task": "^1.6",
+        "nwidart/laravel-modules": "^8.2",
+        "sixlive/dotenv-editor": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",

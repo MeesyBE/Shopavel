@@ -38,7 +38,7 @@ class CategoryController extends Controller
     $slug->slug_request = $request->url_key;
     $slug->slug_type = 0;
     $slug->slugmodel_id = $category->id;
-    $slug->slugmodel_type = 'App\Models\CategoryEntity';
+    $slug->slugmodel_type = 'App\Models\Categories\CategoryEntity';
     $slug->save();
 
     return redirect('/admin/categories');
@@ -104,7 +104,7 @@ class CategoryController extends Controller
       $slug->slug_request = $request->category_url_key;
       $slug->slug_type = 0;
       $slug->slugmodel_id = $category->id;
-      $slug->slugmodel_type = 'App\Models\CategoryEntity';
+      $slug->slugmodel_type = 'App\Models\Categories\CategoryEntity';
       $slug->save();
     }
 

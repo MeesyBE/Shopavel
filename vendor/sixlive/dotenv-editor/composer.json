@@ -1,0 +1,43 @@
+{
+    "name": "sixlive/dotenv-editor",
+    "description": "A tool to edit phpdotenv files",
+    "keywords": [
+        "phpdotenv",
+        "dotenv",
+        "dotenv-editor"
+    ],
+    "homepage": "https://github.com/sixlive/dotenv-editor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TJ Miller",
+            "email": "oss@tjmiller.co",
+            "homepage": "https://tjmiller.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.2",
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sixlive\\DotenvEditor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "sixlive\\DotenvEditor\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "cs": "vendor/bin/php-cs-fixer fix --config=./.php-cs-fixer.dist.php"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

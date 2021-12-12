@@ -29,8 +29,18 @@ The aim of shopavel is to become the most user-friendly webshop software without
 
 If you try shopavel, give us some [feedback](https://github.com/MeesyBE/Shopavel/discussions/7).
 
+## Web Installation
+Start with cloning or uploading shopavel:
 
-## Installation
+     git clone https://github.com/MeesyBE/Shopavel.git
+     
+Or download the zip file and upload the content via FTP
+
+Go to /install and follow the steps
+    
+
+
+## Manual Installation
 Start with cloning:
 
      git clone https://github.com/MeesyBE/Shopavel.git
